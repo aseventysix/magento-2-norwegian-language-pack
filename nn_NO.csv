@@ -222,6 +222,8 @@ button_label,button_label,module,Magento_AdvancedSearch
 "Enable Search Suggestions","Aktivere søkeforslag",module,Magento_AdvancedSearch
 "Search Suggestions Count","Antall søke forslag",module,Magento_AdvancedSearch
 "Show Results Count for Each Suggestion","Vis antall resultat for hvert forslag",module,Magento_AdvancedSearch
+"Related search terms","Related search terms",module,Magento_AdvancedSearch
+"Did you mean","Mente du",module,Magento_AdvancedSearch
 ID,ID,module,Magento_AdvancedSearch
 "Search Query",Søkeord,module,Magento_AdvancedSearch
 Store,Butikk,module,Magento_AdvancedSearch
@@ -297,7 +299,6 @@ Summary,Oppsummering,module,Magento_AsynchronousOperations
 "Items That Can’t Be Updated.","Items That Can’t Be Updated.",module,Magento_AsynchronousOperations
 ID,ID,module,Magento_AsynchronousOperations
 Status,Status,module,Magento_AsynchronousOperations
-Action,Handling,module,Magento_AsynchronousOperations
 "Meta Information",Meta-informasjon,module,Magento_AsynchronousOperations
 Error,Feil,module,Magento_AsynchronousOperations
 "Dismiss All Completed Tasks","Forkaste alle fullførte oppgaver",module,Magento_AsynchronousOperations
@@ -316,13 +317,13 @@ failed.,mislyktes.,module,Magento_Authorizenet
 successful.,vellykket.,module,Magento_Authorizenet
 "Authorize.Net Transaction ID %1.","Authorize.Net Transaction ID %1.",module,Magento_Authorizenet
 authorize,autoriser,module,Magento_Authorizenet
-"authorize and capture","authorize and capture",module,Magento_Authorizenet
+"authorize and capture","godkjenn og fang",module,Magento_Authorizenet
 capture,fange,module,Magento_Authorizenet
 refund,tilbakebetaling,module,Magento_Authorizenet
 void,Ugyldig,module,Magento_Authorizenet
 "Gateway error: %1","Gateway-feil: %1",module,Magento_Authorizenet
-"Something went wrong in the payment gateway.","Something went wrong in the payment gateway.",module,Magento_Authorizenet
-"Invalid amount for capture.","Invalid amount for capture.",module,Magento_Authorizenet
+"Something went wrong in the payment gateway.","Noe gikk galt i betalingsportalen.",module,Magento_Authorizenet
+"Invalid amount for capture.","Ugyldig beløp for mottak.",module,Magento_Authorizenet
 "Payment capturing error.","Payment capturing error.",module,Magento_Authorizenet
 "Invalid transaction ID.","Ugyldig transaksjons-ID.",module,Magento_Authorizenet
 "Payment voiding error.","Payment voiding error.",module,Magento_Authorizenet
@@ -338,6 +339,7 @@ void,Ugyldig,module,Magento_Authorizenet
 "Authorize Only","Authorize Only",module,Magento_Authorizenet
 "Authorize and Capture","Authorize and Capture",module,Magento_Authorizenet
 "Unable to get transaction details. Try again later.","Unable to get transaction details. Try again later.",module,Magento_Authorizenet
+"Electronic payments save the trees.","Electronic payments save the trees.",module,Magento_Authorizenet
 "Credit Card Type",Kredittkorttype,module,Magento_Authorizenet
 "Please Select","Vennligst velg",module,Magento_Authorizenet
 "Credit Card Number",Kredittkortnummer,module,Magento_Authorizenet
@@ -364,9 +366,9 @@ Title,Tittel,module,Magento_Authorizenet
 "Transaction Details URL","Transaction Details URL",module,Magento_Authorizenet
 "Accepted Currency","Akseptert valuta",module,Magento_Authorizenet
 Debug,Feilsøk,module,Magento_Authorizenet
-"Email Customer","Email Customer",module,Magento_Authorizenet
+"Email Customer","E-post kunde",module,Magento_Authorizenet
 "Merchant's Email","Merchant's Email",module,Magento_Authorizenet
-"Credit Card Types","Credit Card Types",module,Magento_Authorizenet
+"Credit Card Types",Kredittkorttyper,module,Magento_Authorizenet
 "Credit Card Verification",Bankkort-verifisering,module,Magento_Authorizenet
 "Payment from Applicable Countries","Betaling fra aktuelle land",module,Magento_Authorizenet
 "Payment from Specific Countries","Betaling fra bestemte land",module,Magento_Authorizenet
@@ -473,10 +475,10 @@ No,Nei,module,Magento_Backend
 "Store Information",Butikkinformasjon,module,Magento_Backend
 "Web Site",Webområde,module,Magento_Backend
 Name,Navn,module,Magento_Backend
+Code,Kode,module,Magento_Backend
 "Root Category",Rotkategori,module,Magento_Backend
 "Default Store View","Standard butikkvisning",module,Magento_Backend
 "Store View Information",Butikkvisningsinformasjon,module,Magento_Backend
-Code,Kode,module,Magento_Backend
 Status,Status,module,Magento_Backend
 Disabled,Deaktivert,module,Magento_Backend
 Enabled,Aktivert,module,Magento_Backend
@@ -495,7 +497,7 @@ Reset,Nullstill,module,Magento_Backend
 "Export block for grid %1 is not defined","Eksport blokk for rutenett %1 er ikke definert",module,Magento_Backend
 "Reset Filter","Tilbakestill filter",module,Magento_Backend
 Search,Søk,module,Magento_Backend
-Any,Any,module,Magento_Backend
+Any,"Hvilket som helst",module,Magento_Backend
 "All Countries","Alle land",module,Magento_Backend
 From,Fra,module,Magento_Backend
 To,Til,module,Magento_Backend
@@ -524,7 +526,7 @@ Submit,Send,module,Magento_Backend
 "The Magento cache storage has been flushed.","Magento butikkbuffer lagringen er tømt.",module,Magento_Backend
 "Cache Management","Cache Management",module,Magento_Backend
 "You can't change status of cache type(s) in production mode","Du kan ikke endre status for hurtigbuffertype(r) i produksjonsmodus",module,Magento_Backend
-"%1 cache type(s) disabled.","%1 cache type(s) disabled.",module,Magento_Backend
+"%1 cache type(s) disabled.","%1 cache type(r) deaktivert.",module,Magento_Backend
 "An error occurred while disabling cache.","An error occurred while disabling cache.",module,Magento_Backend
 "%1 cache type(s) enabled.","%1 cache type(s) enabled.",module,Magento_Backend
 "An error occurred while enabling cache.","An error occurred while enabling cache.",module,Magento_Backend
@@ -589,7 +591,10 @@ YTD,"Hittil i år",module,Magento_Backend
 "Admin session lifetime must be greater than or equal to 60 seconds","Admin session lifetime must be greater than or equal to 60 seconds",module,Magento_Backend
 Order,Ordre,module,Magento_Backend
 "Order #%1","Ordre # %1",module,Magento_Backend
-"Cannot apply unknown condition","Kan ikke bruke ukjent tilstand",module,Magento_Backend
+"Save &amp; Continue","Save &amp; Continue",module,Magento_Backend
+"Save &amp; Close","Save &amp; Close",module,Magento_Backend
+"Save &amp; New","Save &amp; New",module,Magento_Backend
+Edit,Edit,module,Magento_Backend
 "Access denied","Ingen tilgang",module,Magento_Backend
 "Please try to sign out and sign in again.","Prøv å logge ut og logge på igjen.",module,Magento_Backend
 "If you continue to receive this message, please contact the store owner.","Hvis du vedvarende får denne meldingen, vennligst kontakt vutikkeieren.",module,Magento_Backend
@@ -630,7 +635,7 @@ Minute,Minute,module,Magento_Backend
 "JavaScript may be disabled in your browser.","JavaScript may be disabled in your browser.",module,Magento_Backend
 "To use this website you must first enable JavaScript in your browser.","To use this website you must first enable JavaScript in your browser.",module,Magento_Backend
 "This is only a demo store. You can browse and place orders, but nothing will be processed.","This is only a demo store. You can browse and place orders, but nothing will be processed.",module,Magento_Backend
-"Report a Bug","Report a Bug",module,Magento_Backend
+"Report an Issue","Report an Issue",module,Magento_Backend
 "Store View:","Store View:",module,Magento_Backend
 "Stores Configuration","Stores Configuration",module,Magento_Backend
 "Please confirm scope switching. All data that hasn't been saved will be lost.","Please confirm scope switching. All data that hasn't been saved will be lost.",module,Magento_Backend
@@ -667,6 +672,8 @@ Actions,Handlinger,module,Magento_Backend
 Loading...,Loading...,module,Magento_Backend
 "We could not detect a size.","We could not detect a size.",module,Magento_Backend
 "We don't recognize or support this file extension type.","We don't recognize or support this file extension type.",module,Magento_Backend
+"Warning message","Warning message",module,Magento_Backend
+"This operation can take a long time","This operation can take a long time",module,Magento_Backend
 "Allow everything","Allow everything",module,Magento_Backend
 "Magento Admin","Magento Admin",module,Magento_Backend
 "Global Search","Global Search",module,Magento_Backend
@@ -677,6 +684,7 @@ Content,Content,module,Magento_Backend
 Elements,Elements,module,Magento_Backend
 Design,Design,module,Magento_Backend
 Schedule,Schedule,module,Magento_Backend
+"Content translation","Content translation",module,Magento_Backend
 Settings,Innstillinger,module,Magento_Backend
 Attributes,Attributes,module,Magento_Backend
 "Other Settings","Andre innstillinger",module,Magento_Backend
@@ -702,6 +710,8 @@ Advanced,Avansert,module,Magento_Backend
 Developer,Developer,module,Magento_Backend
 Debug,Debug,module,Magento_Backend
 "Enabled Template Path Hints for Storefront","Enabled Template Path Hints for Storefront",module,Magento_Backend
+"Enable Hints for Storefront with URL Parameter","Enable Hints for Storefront with URL Parameter",module,Magento_Backend
+"Parameter Value","Parameter Value",module,Magento_Backend
 "Enabled Template Path Hints for Admin","Enabled Template Path Hints for Admin",module,Magento_Backend
 "Add Block Names to Hints","Add Block Names to Hints",module,Magento_Backend
 "Template Settings","Template Settings",module,Magento_Backend
@@ -816,20 +826,19 @@ Tags,Tags,module,Magento_Backend
 "<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>","<h1 class=""page-heading"">404 Error</h1><p>Page not found.</p>",module,Magento_Backend
 "Community Edition","Community Edition",module,Magento_Backend
 "Default Theme","Default Theme",module,Magento_Backend
-"Applied Theme","Applied Theme",module,Magento_Backend
 "If no value is specified, the system default is used. The system default may be modified by third party extensions.","If no value is specified, the system default is used. The system default may be modified by third party extensions.",module,Magento_Backend
+"Applied Theme","Applied Theme",module,Magento_Backend
 "Design Rule","Design Rule",module,Magento_Backend
 "User Agent Rules","User Agent Rules",module,Magento_Backend
-Magento_Ui/js/dynamic-rows/record,Magento_Ui/js/dynamic-rows/record,module,Magento_Backend
 Pagination,Pagination,module,Magento_Backend
-"Pagination Frame","Pagination Frame",module,Magento_Backend
 "How many links to display at once.","How many links to display at once.",module,Magento_Backend
-"Pagination Frame Skip","Pagination Frame Skip",module,Magento_Backend
+"Pagination Frame","Pagination Frame",module,Magento_Backend
 "If current frame position does not cover utmost pages, it renders the link to current position plus/minus this value.","If current frame position does not cover utmost pages, it renders the link to current position plus/minus this value.",module,Magento_Backend
-"Anchor Text for Previous","Anchor Text for Previous",module,Magento_Backend
+"Pagination Frame Skip","Pagination Frame Skip",module,Magento_Backend
 "Alternative text for the previous pages link in the pagination menu. If empty, the default arrow image is used.","Alternative text for the previous pages link in the pagination menu. If empty, the default arrow image is used.",module,Magento_Backend
-"Anchor Text for Next","Anchor Text for Next",module,Magento_Backend
+"Anchor Text for Previous","Anchor Text for Previous",module,Magento_Backend
 "Alternative text for the next pages link in the pagination menu. If empty, default arrow image is used.","Alternative text for the next pages link in the pagination menu. If empty, default arrow image is used.",module,Magento_Backend
+"Anchor Text for Next","Anchor Text for Next",module,Magento_Backend
 "Theme Name","Theme Name",module,Magento_Backend
 "System Backup",System-sikkerhetskopiering,module,Magento_Backup
 "Database and Media Backup","Database- og mediabackup",module,Magento_Backup
@@ -961,6 +970,11 @@ Position,Posisjon,module,Magento_Banner
 Error,Feil,module,Magento_Banner
 "Related Cart Price Rules","Relaterte prisregler for handlevogn",module,Magento_Banner
 "Related Catalog Price Rules","Relaterte prisregler for katalogen",module,Magento_Banner
+"Content Area","Content Area",module,Magento_Banner
+Footer,Footer,module,Magento_Banner
+Header,Header,module,Magento_Banner
+"Left Column","Left Column",module,Magento_Banner
+"Right Column","Right Column",module,Magento_Banner
 "Manage Banners","Administrere bannere",module,Magento_Banner
 "Banner Rotator","Banner Rotator",module,Magento_Banner
 "Displays Specified or Promotion Banners","Viser spesifisert eller kampanje bannere",module,Magento_Banner
@@ -990,6 +1004,10 @@ Country,Land,module,Magento_Braintree
 Authorize,Authorize,module,Magento_Braintree
 "Authorize and Capture","Authorize and Capture",module,Magento_Braintree
 "--Please Select--","-Vennligst velg--",module,Magento_Braintree
+"Credit Card","Credit Card",module,Magento_Braintree
+ending,slutter,module,Magento_Braintree
+expires,utløper,module,Magento_Braintree
+PayPal,PayPal,module,Magento_Braintree
 "Please agree to all the terms and conditions before placing the order.","Vennligst godta alle vilkår og betingelser før bestilling.",module,Magento_Braintree
 "Credit Card Type",Kredittkorttype,module,Magento_Braintree
 "Credit Card Number",Kredittkortnummer,module,Magento_Braintree
@@ -998,8 +1016,7 @@ Authorize,Authorize,module,Magento_Braintree
 "Please, enter valid Expiration Date","Skriv inn gyldig utløpsdato",module,Magento_Braintree
 "Card Verification Number",CVC-kode,module,Magento_Braintree
 "Please, enter valid Card Verification Number","Skriv inn gyldig CVC-kode",module,Magento_Braintree
-ending,slutter,module,Magento_Braintree
-expires,utløper,module,Magento_Braintree
+"Are you sure you want to delete this PayPal account","Are you sure you want to delete this PayPal account",module,Magento_Braintree
 "PayPal Account",PayPal-konto,module,Magento_Braintree
 "PayPal Logo",PayPal-Logo,module,Magento_Braintree
 Actions,Actions,module,Magento_Braintree
@@ -1280,6 +1297,8 @@ Select...,Select...,module,Magento_Bundle
 Status,Status,module,Magento_Bundle
 Thumbnail,Thumbnail,module,Magento_Bundle
 Type,Type,module,Magento_Bundle
+"Special Price","Special Price",module,Magento_Bundle
+"Unique constraint violation found","Unique constraint violation found",module,Magento_BundleStaging
 Cancel,Avbryt,module,Magento_BundleStaging
 "Add Selected Products","Legg til merkede produkter",module,Magento_BundleStaging
 "Add Products to Option","Legge til produkter i alternativet",module,Magento_BundleStaging
@@ -1530,6 +1549,7 @@ Catalog,Catalog,module,Magento_Catalog
 "An attribute with this code already exists.","An attribute with this code already exists.",module,Magento_Catalog
 "An attribute with the same code (%1) already exists.","An attribute with the same code (%1) already exists.",module,Magento_Catalog
 "The value of Admin must be unique.","The value of Admin must be unique.",module,Magento_Catalog
+"The value of Admin scope can't be empty.","The value of Admin scope can't be empty.",module,Magento_Catalog
 "You duplicated the product.","You duplicated the product.",module,Magento_Catalog
 "This product doesn't exist.","Dette produktet finnes ikke.",module,Magento_Catalog
 "Invalid product id. Should be numeric value greater than 0","Invalid product id. Should be numeric value greater than 0",module,Magento_Catalog
@@ -1942,9 +1962,13 @@ OK,OK,module,Magento_Catalog
 "Image Detail",Bildedetaljer,module,Magento_Catalog
 Adding...,"Legger til...",module,Magento_Catalog
 Added,"Lagt til",module,Magento_Catalog
+"does not implement Storage Interface","does not implement Storage Interface",module,Magento_Catalog
 "unselect all","unselect all",module,Magento_Catalog
 Inventory,Inventory,module,Magento_Catalog
 "Catalog Section","Catalog Section",module,Magento_Catalog
+Small,Liten,module,Magento_Catalog
+Main,Main,module,Magento_Catalog
+"Custom image","Custom image",module,Magento_Catalog
 "Product Fields Auto-Generation","Product Fields Auto-Generation",module,Magento_Catalog
 "Mask for SKU","Mask for SKU",module,Magento_Catalog
 "Use {{name}} as Product Name placeholder","Bruk {{name}} som plassholder til produktnavn",module,Magento_Catalog
@@ -1953,6 +1977,10 @@ Inventory,Inventory,module,Magento_Catalog
 "Use {{name}} as Product Name or {{sku}} as Product SKU placeholders","Bruk {{name}} som produktnavn eller {{sku}} som plassholder for produkt SKU",module,Magento_Catalog
 "Mask for Meta Description","Mask for Meta Description",module,Magento_Catalog
 "Use {{name}} and {{description}} as Product Name and Product Description placeholders","Bruk {{name}} og {{description}} som plassholdere for produktnavn og produktbeskrivelse",module,Magento_Catalog
+"Recently Viewed/Compared Products","Recently Viewed/Compared Products",module,Magento_Catalog
+"Lifetime of products in Recently Viewed Widget","Lifetime of products in Recently Viewed Widget",module,Magento_Catalog
+"Lifetime of products in Recently Compared Widget","Lifetime of products in Recently Compared Widget",module,Magento_Catalog
+"Synchronize widget products with backend storage","Synchronize widget products with backend storage",module,Magento_Catalog
 Storefront,Storefront,module,Magento_Catalog
 "List Mode",Listemodus,module,Magento_Catalog
 "Products per Page on Grid Allowed Values","Products per Page on Grid Allowed Values",module,Magento_Catalog
@@ -1986,6 +2014,8 @@ Comma-separated.,Comma-separated.,module,Magento_Catalog
 "Use Static URLs for Media Content in WYSIWYG for Catalog","Use Static URLs for Media Content in WYSIWYG for Catalog",module,Magento_Catalog
 "This applies only to catalog products and categories. Media content will be inserted into the editor as a static URL. Media content is not updated if the system configuration base URL changes.","This applies only to catalog products and categories. Media content will be inserted into the editor as a static URL. Media content is not updated if the system configuration base URL changes.",module,Magento_Catalog
 "Top Level Category","Top Level Category",module,Magento_Catalog
+"Product Info Column","Product Info Column",module,Magento_Catalog
+"Block after Info Column","Block after Info Column",module,Magento_Catalog
 "Product Flat Data","Product Flat Data",module,Magento_Catalog
 "Reorganize EAV product structure to flat structure","Reorganize EAV product structure to flat structure",module,Magento_Catalog
 "Category Flat Data","Category Flat Data",module,Magento_Catalog
@@ -2029,6 +2059,22 @@ Template,Mal,module,Magento_Catalog
 "If empty, we'll use the category name here.","If empty, we'll use the category name here.",module,Magento_Catalog
 "Category Link Block Template","Category Link Block Template",module,Magento_Catalog
 "Category Link Inline Template","Category Link Inline Template",module,Magento_Catalog
+"Recently Viewed Products","Recently Viewed Products",module,Magento_Catalog
+"List of Products Recently Viewed by Visitor","List of Products Recently Viewed by Visitor",module,Magento_Catalog
+"UI Component","UI Component",module,Magento_Catalog
+"Number of Products to display","Number of Products to display",module,Magento_Catalog
+"Product attributes to show","Product attributes to show",module,Magento_Catalog
+Image,Bilde,module,Magento_Catalog
+"Learn More Link","Learn More Link",module,Magento_Catalog
+"Buttons to show","Buttons to show",module,Magento_Catalog
+"Add to Wishlist","Add to Wishlist",module,Magento_Catalog
+"Viewed Products Grid Template","Viewed Products Grid Template",module,Magento_Catalog
+"Viewed Products List Template","Viewed Products List Template",module,Magento_Catalog
+"Viewed Products Sidebar Template","Viewed Products Sidebar Template",module,Magento_Catalog
+"Recently Compared Products","Recently Compared Products",module,Magento_Catalog
+"List of Products Recently Compared by Visitor","List of Products Recently Compared by Visitor",module,Magento_Catalog
+"Compared Products Grid Template","Compared Products Grid Template",module,Magento_Catalog
+"Compared Products List Template","Compared Products List Template",module,Magento_Catalog
 Set,Set,module,Magento_Catalog
 "Category Information",Kategoriinformasjon,module,Magento_Catalog
 "Enable Category","Aktiver kategori",module,Magento_Catalog
@@ -2059,8 +2105,8 @@ AttributeSetText,AttributeSetText,module,Magento_Catalog
 StatusText,StatusText,module,Magento_Catalog
 "Product Image Watermarks","Product Image Watermarks",module,Magento_Catalog
 Base,Base,module,Magento_Catalog
-Image,Bilde,module,Magento_Catalog
 "Allowed file types: jpeg, gif, png.","Tillatte filtyper: jpeg, gif, png.",module,Magento_Catalog
+Image,Bilde,module,Magento_Catalog
 "Image Opacity","Image Opacity",module,Magento_Catalog
 "Example format: 200x300.","Eksempelformat: 200 x 300.",module,Magento_Catalog
 "Image Position",Bildeposisjon,module,Magento_Catalog
@@ -2073,17 +2119,24 @@ Values,Verdier,module,Magento_Catalog
 "Add this attribute to the list of filter options in the product grid.","Add this attribute to the list of filter options in the product grid.",module,Magento_Catalog
 System,System,module,Magento_Catalog
 "All Store Views","All Store Views",module,Magento_Catalog
-"Delete items","Slette elementer",module,Magento_Catalog
 "Delete selected items?","Slett merkede elementer?",module,Magento_Catalog
+"Delete items","Slette elementer",module,Magento_Catalog
 "Change status","Endre status",module,Magento_Catalog
 Enable,Aktiver,module,Magento_Catalog
 Disable,Deaktiver,module,Magento_Catalog
 "Update attributes","Update attributes",module,Magento_Catalog
-none,ingen,module,Magento_Catalog
 Overview,Oversikt,module,Magento_Catalog
 "Skip to the end of the images gallery","Skip to the end of the images gallery",module,Magento_Catalog
 "Skip to the beginning of the images gallery","Skip to the beginning of the images gallery",module,Magento_Catalog
 Details,Produktbeskrivelse,module,Magento_Catalog
+"Recently Compared","Recently Compared",module,Magento_Catalog
+"Add To Cart","Add To Cart",module,Magento_Catalog
+"Add To Compare","Add To Compare",module,Magento_Catalog
+"Learn more","Learn more",module,Magento_Catalog
+"Recently Viewed","Recently Viewed",module,Magento_Catalog
+"The value of Admin must be unique.","The value of Admin must be unique.",module,Magento_Catalog
+"The value of Admin must be unique. (%1)","The value of Admin must be unique. (%1)",module,Magento_Catalog
+"Short Description","Kort beskrivelse",module,Magento_Catalog
 "Edit Event","Rediger hendelsen",module,Magento_CatalogEvent
 "Add Event","Legg til hendelse",module,Magento_CatalogEvent
 Events,Hendelser,module,Magento_CatalogEvent
@@ -2160,6 +2213,7 @@ Edit,Rediger,module,Magento_CatalogEvent
 "Entity type model must be an instance of \Magento\CatalogImportExport\Model\Export\Product\Type\AbstractType","Enhetstypemodellen må være en forekomst av \Magento\CatalogImportExport\Model\Export\Product\Type\AbstractType",module,Magento_CatalogImportExport
 "There are no product types available for export.","Det finnes ingen produkttyper tilgjengelig for eksport.",module,Magento_CatalogImportExport
 "'Entity type model must be an instance of ' .","'Entity type model must be an instance of ' .",module,Magento_CatalogImportExport
+"Wrong attribute set code ""%1"", please correct it and try again.","Wrong attribute set code ""%1"", please correct it and try again.",module,Magento_CatalogImportExport
 "Category ""%1"" has not been created.","Kategorien ""%1"" er ikke opprettet.",module,Magento_CatalogImportExport
 "File directory '%1' is not readable.","Katalogen '%1' er ikke lesbar.",module,Magento_CatalogImportExport
 "File directory '%1' is not writable.","Katalogen '%1' er ikke skrivbar.",module,Magento_CatalogImportExport
@@ -2181,9 +2235,6 @@ Edit,Rediger,module,Magento_CatalogEvent
 "Add Minimum Qty","Legg til minimum antall",module,Magento_CatalogInventory
 "We can't rebuild the index for an undefined product.","Vi kan ikke bygge indeksen for en udefinert produkt.",module,Magento_CatalogInventory
 "Could not rebuild index for empty products array","Could not rebuild index for empty products array",module,Magento_CatalogInventory
-"Invalid stock id: %1. Only default stock with id %2 allowed","Invalid stock id: %1. Only default stock with id %2 allowed",module,Magento_CatalogInventory
-"Invalid stock item id: %1. Should be null or numeric value greater than 0","Invalid stock item id: %1. Should be null or numeric value greater than 0",module,Magento_CatalogInventory
-"Invalid stock item id: %1. Assigned stock item id is %2","Invalid stock item id: %1. Assigned stock item id is %2",module,Magento_CatalogInventory
 "The stock item for Product is not valid.","The stock item for Product is not valid.",module,Magento_CatalogInventory
 "This product is out of stock.","This product is out of stock.",module,Magento_CatalogInventory
 "Some of the products are out of stock.","Some of the products are out of stock.",module,Magento_CatalogInventory
@@ -2203,6 +2254,9 @@ Edit,Rediger,module,Magento_CatalogEvent
 "Unable to remove Stock with id ""%1""","Unable to remove Stock with id ""%1""",module,Magento_CatalogInventory
 "Unable to save Stock Status","Unable to save Stock Status",module,Magento_CatalogInventory
 "Unable to remove Stock Status for product %1","Unable to remove Stock Status for product %1",module,Magento_CatalogInventory
+"Invalid stock id: %1. Only default stock with id %2 allowed","Invalid stock id: %1. Only default stock with id %2 allowed",module,Magento_CatalogInventory
+"Invalid stock item id: %1. Should be null or numeric value greater than 0","Invalid stock item id: %1. Should be null or numeric value greater than 0",module,Magento_CatalogInventory
+"Invalid stock item id: %1. Assigned stock item id is %2","Invalid stock item id: %1. Assigned stock item id is %2",module,Magento_CatalogInventory
 "Not all of your products are available in the requested quantity.","Not all of your products are available in the requested quantity.",module,Magento_CatalogInventory
 "Product with SKU ""%1"" does not exist","Product with SKU ""%1"" does not exist",module,Magento_CatalogInventory
 "The fewest you may purchase is %1.","The fewest you may purchase is %1.",module,Magento_CatalogInventory
@@ -2247,7 +2301,6 @@ Stock,Stock,module,Magento_CatalogInventory
 "Use Config Settings","Use Config Settings",module,Magento_CatalogInventory
 "Qty Uses Decimals","Antall bruker desimaler",module,Magento_CatalogInventory
 "Allow Multiple Boxes for Shipping","Allow Multiple Boxes for Shipping",module,Magento_CatalogInventory
-"Use Deferred Stock Update","Use Deferred Stock Update",module,Magento_CatalogInventory
 "New Permission","Ny tillatelse",module,Magento_CatalogPermissions
 "You already have a permission with this scope.","Du har allerede en tillatelse med dette omfanget.",module,Magento_CatalogPermissions
 (Allow),(Tillat),module,Magento_CatalogPermissions
@@ -2353,9 +2406,21 @@ Inactive,Inactive,module,Magento_CatalogRule
 "Web Site","Web Site",module,Magento_CatalogRule
 Back,Back,module,Magento_CatalogRule
 "Rule Information","Rule Information",module,Magento_CatalogRule
+"Rule Name","Rule Name",module,Magento_CatalogRule
+Description,Beskrivelse,module,Magento_CatalogRule
+Websites,Nettsteder,module,Magento_CatalogRule
+"Customer Groups","Customer Groups",module,Magento_CatalogRule
+From,Fra,module,Magento_CatalogRule
+To,Til,module,Magento_CatalogRule
+Priority,Prioritet,module,Magento_CatalogRule
 Actions,Actions,module,Magento_CatalogRule
+Apply,Bruk,module,Magento_CatalogRule
+"Discount Amount",Rabattbeløp,module,Magento_CatalogRule
+"Discard subsequent rules","Discard subsequent rules",module,Magento_CatalogRule
 Yes,Ja,module,Magento_CatalogRule
 No,No,module,Magento_CatalogRule
+catalog_rule,catalog_rule,module,Magento_CatalogRuleStaging
+"Magento\CatalogRule\Api\Data\RuleInterface","Magento\CatalogRule\Api\Data\RuleInterface",module,Magento_CatalogRuleStaging
 "Future Update in this time range already exists. Select a different range to add a new Future Update.","Fremtidig oppdatering i dette tidsintervallet finnes allerede. Velg et annet område å legge til en ny fremtidig oppdatering.",module,Magento_CatalogRuleStaging
 "Future Update End Time cannot be equal or earlier than Start Time.","Fremtidig oppdaterings-sluttidspunkt kan ikke være lik eller tidligere enn starttid.",module,Magento_CatalogRuleStaging
 "Smth went to exception","Smth gikk til unntak",module,Magento_CatalogRuleStaging
@@ -2370,28 +2435,35 @@ Name,Navn,module,Magento_CatalogRuleStaging
 Description,Beskrivelse,module,Magento_CatalogRuleStaging
 "Update Information","Update Information",module,Magento_CatalogRuleStaging
 "Remove Catalog Price Rule from Update","Remove Catalog Price Rule from Update",module,Magento_CatalogRuleStaging
+"Schedule Update","Schedule Update",module,Magento_CatalogRuleStaging
 "Update Name","Update Name",module,Magento_CatalogRuleStaging
 "Start Date",Startdato,module,Magento_CatalogRuleStaging
 "End Date","End Date",module,Magento_CatalogRuleStaging
 "Rule Information","Rule Information",module,Magento_CatalogRuleStaging
+"Rule Name","Rule Name",module,Magento_CatalogRuleStaging
+Status,Status,module,Magento_CatalogRuleStaging
 Active,Aktiv,module,Magento_CatalogRuleStaging
 Inactive,Inaktiv,module,Magento_CatalogRuleStaging
+Websites,Websites,module,Magento_CatalogRuleStaging
+"Customer Groups","Customer Groups",module,Magento_CatalogRuleStaging
 Conditions,Conditions,module,Magento_CatalogRuleStaging
 Actions,Actions,module,Magento_CatalogRuleStaging
+Apply,Apply,module,Magento_CatalogRuleStaging
+"Discount Amount","Discount Amount",module,Magento_CatalogRuleStaging
+"Discard subsequent rules","Discard subsequent rules",module,Magento_CatalogRuleStaging
 Yes,Yes,module,Magento_CatalogRuleStaging
 No,No,module,Magento_CatalogRuleStaging
 "Save as a New Update","Save as a New Update",module,Magento_CatalogRuleStaging
 "Move to Another Update","Move to Another Update",module,Magento_CatalogRuleStaging
 "Delete the Update","Delete the Update",module,Magento_CatalogRuleStaging
 "The catalog price rule will be removed from the update and all scheduled changes will be lost.","The catalog price rule will be removed from the update and all scheduled changes will be lost.",module,Magento_CatalogRuleStaging
-20,20,module,Magento_CatalogRuleStaging
-30,30,module,Magento_CatalogRuleStaging
-50,50,module,Magento_CatalogRuleStaging
-100,100,module,Magento_CatalogRuleStaging
 200,200,module,Magento_CatalogRuleStaging
+100,100,module,Magento_CatalogRuleStaging
+50,50,module,Magento_CatalogRuleStaging
+30,30,module,Magento_CatalogRuleStaging
+20,20,module,Magento_CatalogRuleStaging
 "Start Time","Start Time",module,Magento_CatalogRuleStaging
 "End Time","End Time",module,Magento_CatalogRuleStaging
-Websites,Websites,module,Magento_CatalogRuleStaging
 "Catalog Price Rules","Catalog Price Rules",module,Magento_CatalogRuleStaging
 "Remove Catalog Price Rule from Campaign","Remove Catalog Price Rule from Campaign",module,Magento_CatalogRuleStaging
 Home,Hjem,module,Magento_CatalogSearch
@@ -2433,6 +2505,10 @@ name,name,module,Magento_CatalogSearch
 "Minimal Query Length","Minimal Query Length",module,Magento_CatalogSearch
 "Maximum Query Length","Maximum Query Length",module,Magento_CatalogSearch
 "Rebuild Catalog product fulltext search index","Rebuild Catalog product fulltext search index",module,Magento_CatalogSearch
+product,product,module,Magento_CatalogStaging
+catalog_category,catalog_category,module,Magento_CatalogStaging
+"Magento\Catalog\Api\Data\ProductInterface","Magento\Catalog\Api\Data\ProductInterface",module,Magento_CatalogStaging
+"Magento\Catalog\Api\Data\CategoryInterface","Magento\Catalog\Api\Data\CategoryInterface",module,Magento_CatalogStaging
 "Attribute ""%1"" is required.","Attributten ""%1"" kreves.",module,Magento_CatalogStaging
 Enabled,Aktivert,module,Magento_CatalogStaging
 Disabled,Deaktivert,module,Magento_CatalogStaging
@@ -2451,13 +2527,11 @@ Preview,Forhåndsvis,module,Magento_CatalogStaging
 "Set Product as New","Angi produkt som nytt",module,Magento_CatalogStaging
 "Store View:","Store View:",module,Magento_CatalogStaging
 "Stores Configuration","Stores Configuration",module,Magento_CatalogStaging
-Images,Bilder,module,Magento_CatalogStaging
 "Scheduled Changes","Scheduled Changes",module,Magento_CatalogStaging
 Name,Navn,module,Magento_CatalogStaging
 Description,Beskrivelse,module,Magento_CatalogStaging
 Action,Action,module,Magento_CatalogStaging
 "Update Information","Update Information",module,Magento_CatalogStaging
-"Remove Category from Update","Remove Category from Update",module,Magento_CatalogStaging
 "Schedule Update","Schedule Update",module,Magento_CatalogStaging
 "Update Name","Update Name",module,Magento_CatalogStaging
 "Start Date","Start Date",module,Magento_CatalogStaging
@@ -2488,11 +2562,11 @@ Layout,Layout,module,Magento_CatalogStaging
 "Move to Another Update","Move to Another Update",module,Magento_CatalogStaging
 "Delete the Update","Slett oppdateringen",module,Magento_CatalogStaging
 "The category will be removed from the update and all scheduled changes will be lost.","The category will be removed from the update and all scheduled changes will be lost.",module,Magento_CatalogStaging
-20,20,module,Magento_CatalogStaging
-30,30,module,Magento_CatalogStaging
-50,50,module,Magento_CatalogStaging
-100,100,module,Magento_CatalogStaging
 200,200,module,Magento_CatalogStaging
+100,100,module,Magento_CatalogStaging
+50,50,module,Magento_CatalogStaging
+30,30,module,Magento_CatalogStaging
+20,20,module,Magento_CatalogStaging
 "Start Time","Start Time",module,Magento_CatalogStaging
 "End Time","End Time",module,Magento_CatalogStaging
 ID,ID,module,Magento_CatalogStaging
@@ -2505,12 +2579,11 @@ Type,Type,module,Magento_CatalogStaging
 SKU,SKU,module,Magento_CatalogStaging
 Price,Pris,module,Magento_CatalogStaging
 "Remove Product from Update","Remove Product from Update",module,Magento_CatalogStaging
+Images,Bilder,module,Magento_CatalogStaging
 "The product will be removed from the update and all scheduled changes will be lost.","The product will be removed from the update and all scheduled changes will be lost.",module,Magento_CatalogStaging
 "Currently Active","Currently Active",module,Magento_CatalogStaging
 Products,Produkter,module,Magento_CatalogStaging
-"Remove Product from Campaign","Remove Product from Campaign",module,Magento_CatalogStaging
 Categories,Kategorier,module,Magento_CatalogStaging
-"Remove Category from Campaign","Remove Category from Campaign",module,Magento_CatalogStaging
 Path,Bane,module,Magento_CatalogStaging
 Quantity,Antall,module,Magento_CatalogStaging
 Visibility,Visibility,module,Magento_CatalogStaging
@@ -2676,20 +2749,15 @@ Remove,Fjern,module,Magento_Checkout
 "Ship Here",Leveringsadresse,module,Magento_Checkout
 "Ship To:","Levering til:",module,Magento_Checkout
 edit,rediger,module,Magento_Checkout
-"Shipping Address",Leveringsadresse,module,Magento_Checkout
-"New Address","Ny adresse",module,Magento_Checkout
-"Shipping Methods",Leveringsmåte,module,Magento_Checkout
-"Select Method","Velg metode",module,Magento_Checkout
-"Method Title",Metodetittel,module,Magento_Checkout
-"Carrier Title",Frakt-tittel,module,Magento_Checkout
-Next,Neste,module,Magento_Checkout
-"Sorry, no quotes are available for this order at this time","Sorry, no quotes are available for this order at this time",module,Magento_Checkout
 "Order Summary",Ordreoversikt,module,Magento_Checkout
 "View and Edit Cart","Se og endre handlevogn",module,Magento_Checkout
 "View Details","Vis detaljer",module,Magento_Checkout
+Field,Felt,module,Magento_Checkout
+"is required.","er påkrevd.",module,Magento_Checkout
 "Provided Zip/Postal Code seems to be invalid.","Gitt postnummeret synes å være ugyldig.",module,Magento_Checkout
 Example:,Eksempel:,module,Magento_Checkout
 "If you believe it is the right one you can ignore this notice.","Hvis du mener det er riktig kan du ignorere denne meldingen.",module,Magento_Checkout
+"New Address","Ny adresse",module,Magento_Checkout
 "Are you sure you would like to remove this item from the shopping cart?","Er du sikker på at du vil fjerne dette produktet fra handlekurven?",module,Magento_Checkout
 "Review & Payments","Gjennomgang & betalinger",module,Magento_Checkout
 "Select a new payment method","Velg en ny betalingsmåte",module,Magento_Checkout
@@ -2720,15 +2788,12 @@ Shipping,Frakt,module,Magento_Checkout
 "Send Payment Failed Email Copy Method","Send Payment Failed Email Copy Method",module,Magento_Checkout
 Summary,Sammendrag,module,Magento_Checkout
 "Order Total",Ordretotal,module,Magento_Checkout
+"Shipping Address",Leveringsadresse,module,Magento_Checkout
 "We'll send your order confirmation here.","Vi sender deg ordrebekreftelse her.",module,Magento_Checkout
 Payment,Betaling,module,Magento_Checkout
 "Not yet calculated","Ennå ikke er beregnet",module,Magento_Checkout
 "We received your order!","Vi har mottatt din ordre!",module,Magento_Checkout
 "Thank you for your purchase!","Takk for bestillingen!",module,Magento_Checkout
-"Go to Checkout","Gå til kassen",module,Magento_Checkout
-"View and edit cart","Vis og rediger handlekurv",module,Magento_Checkout
-"Item in Cart","Produkter i handlekurven",module,Magento_Checkout
-"Items in Cart","Produkt i handlekurven",module,Magento_Checkout
 "Terms and Conditions","Vilkår og betingelser",module,Magento_CheckoutAgreements
 "Add New Condition","Legg til ny tilstand",module,Magento_CheckoutAgreements
 "Save Condition","Lagre tilstand",module,Magento_CheckoutAgreements
@@ -2862,7 +2927,7 @@ Exception,Exception,module,Magento_Cms
 Edit,Rediger,module,Magento_Cms
 Delete,Slett,module,Magento_Cms
 "Delete %1","Delete %1",module,Magento_Cms
-"Are you sure you wan't to delete a %1 record?","Are you sure you wan't to delete a %1 record?",module,Magento_Cms
+"Are you sure you want to delete a %1 record?","Are you sure you want to delete a %1 record?",module,Magento_Cms
 "All Store Views","All Store Views",module,Magento_Cms
 View,View,module,Magento_Cms
 px.,px.,module,Magento_Cms
@@ -2901,8 +2966,8 @@ Block,Block,module,Magento_Cms
 "General Information","General Information",module,Magento_Cms
 "Enable Block","Enable Block",module,Magento_Cms
 "Block Title","Block Title",module,Magento_Cms
+"Are you sure you want to delete selected items?","Are you sure you want to delete selected items?",module,Magento_Cms
 "Delete items","Delete items",module,Magento_Cms
-"Are you sure you wan't to delete selected items?","Are you sure you wan't to delete selected items?",module,Magento_Cms
 "Page Information","Page Information",module,Magento_Cms
 "Enable Page","Enable Page",module,Magento_Cms
 Content,Content,module,Magento_Cms
@@ -2926,9 +2991,14 @@ Enable,Enable,module,Magento_Cms
 "Custom design to","Custom design to",module,Magento_Cms
 "Custom Theme","Custom Theme",module,Magento_Cms
 "Custom Layout","Custom Layout",module,Magento_Cms
+cms_page,cms_page,module,Magento_CmsStaging
+cms_block,cms_block,module,Magento_CmsStaging
+"Magento\Cms\Api\Data\BlockInterface","Magento\Cms\Api\Data\BlockInterface",module,Magento_CmsStaging
+"Magento\Cms\Api\Data\PageInterface","Magento\Cms\Api\Data\PageInterface",module,Magento_CmsStaging
 "This block no longer exists.","Denne blokken finnes ikke lenger.",module,Magento_CmsStaging
 "Future Update in this time range already exists. Select a different range to add a new Future Update.","Fremtidig oppdatering i dette tidsintervallet finnes allerede. Velg et annet område å legge til en ny fremtidig oppdatering.",module,Magento_CmsStaging
 Error,Feil,module,Magento_CmsStaging
+"Currently Active","Currently Active",module,Magento_CmsStaging
 "New Theme","Nytt tema",module,Magento_CmsStaging
 "-- Please Select --","-Vennligst velg--",module,Magento_CmsStaging
 "Scheduled Changes","Planlagte endringer",module,Magento_CmsStaging
@@ -2936,7 +3006,7 @@ Name,Navn,module,Magento_CmsStaging
 Description,Beskrivelse,module,Magento_CmsStaging
 Action,Handling,module,Magento_CmsStaging
 "Update Information","Update Information",module,Magento_CmsStaging
-"Remove CMS block from Update","Remove CMS block from Update",module,Magento_CmsStaging
+"Schedule Update","Schedule Update",module,Magento_CmsStaging
 "Update Name","Oppdater navn",module,Magento_CmsStaging
 "Start Date",Startdato,module,Magento_CmsStaging
 "End Date","End Date",module,Magento_CmsStaging
@@ -2949,11 +3019,11 @@ Identifier,Identifikator,module,Magento_CmsStaging
 "Move to Another Update","Move to Another Update",module,Magento_CmsStaging
 "Delete the Update","Delete the Update",module,Magento_CmsStaging
 "The block will be removed from the update and all scheduled changes will be lost.","The block will be removed from the update and all scheduled changes will be lost.",module,Magento_CmsStaging
-20,20,module,Magento_CmsStaging
-30,30,module,Magento_CmsStaging
-50,50,module,Magento_CmsStaging
-100,100,module,Magento_CmsStaging
 200,200,module,Magento_CmsStaging
+100,100,module,Magento_CmsStaging
+50,50,module,Magento_CmsStaging
+30,30,module,Magento_CmsStaging
+20,20,module,Magento_CmsStaging
 "Start Time","Start Time",module,Magento_CmsStaging
 "End Time","End Time",module,Magento_CmsStaging
 "Remove CMS page from Update","Remove CMS page from Update",module,Magento_CmsStaging
@@ -2971,9 +3041,7 @@ Layout,Layout,module,Magento_CmsStaging
 "Layout Update XML","Layout Update XML",module,Magento_CmsStaging
 "The page will be removed from the update and all scheduled changes will be lost.","The page will be removed from the update and all scheduled changes will be lost.",module,Magento_CmsStaging
 "CMS Pages","CMS Pages",module,Magento_CmsStaging
-"Remove CMS Page from Campaign","Remove CMS Page from Campaign",module,Magento_CmsStaging
 "CMS Blocks","CMS Blocks",module,Magento_CmsStaging
-"Remove CMS Block from Campaign","Remove CMS Block from Campaign",module,Magento_CmsStaging
 ID,ID,module,Magento_CmsStaging
 Title,Tittel,module,Magento_CmsStaging
 Status,Status,module,Magento_CmsStaging
@@ -3030,6 +3098,7 @@ System,System,module,Magento_Config
 "Currency ""%1"" is used as %2 in %3.","Currency ""%1"" is used as %2 in %3.",module,Magento_Config
 "Please correct the timezone.","Please correct the timezone.",module,Magento_Config
 "The file ""%1"" does not exist","The file ""%1"" does not exist",module,Magento_Config
+"The ""%1"" path does not exist","The ""%1"" path does not exist",module,Magento_Config
 "Always (during development)","Always (during development)",module,Magento_Config
 "Only Once (version upgrade)","Only Once (version upgrade)",module,Magento_Config
 "Never (production)","Never (production)",module,Magento_Config
@@ -3056,7 +3125,10 @@ Specified,Specified,module,Magento_Config
 "'There is no defined type ' .","'There is no defined type ' .",module,Magento_Config
 "'Object is not instance of ' .","'Object is not instance of ' .",module,Magento_Config
 "Filesystem is not writable.","Filesystem is not writable.",module,Magento_Config
-"Test exception","Test exception",module,Magento_Config
+"Some error","Some error",module,Magento_Config
+"Some message","Some message",module,Magento_Config
+"This command is unavailable right now.","This command is unavailable right now.",module,Magento_Config
+"The ""test/test/test"" path does not exists","The ""test/test/test"" path does not exists",module,Magento_Config
 "error message","error message",module,Magento_Config
 some_label,some_label,module,Magento_Config
 some_comment,some_comment,module,Magento_Config
@@ -3245,6 +3317,7 @@ Visible,Visible,module,Magento_ConfigurableProduct
 Scope,Scope,module,Magento_ConfigurableProduct
 Searchable,Searchable,module,Magento_ConfigurableProduct
 Comparable,Comparable,module,Magento_ConfigurableProduct
+Save,Save,module,Magento_ConfigurableProductStaging
 Select...,Velg...,module,Magento_ConfigurableProductStaging
 Status,Status,module,Magento_ConfigurableProductStaging
 ID,ID,module,Magento_ConfigurableProductStaging
@@ -3265,7 +3338,10 @@ Searchable,Searchable,module,Magento_ConfigurableProductStaging
 Comparable,Sammenlignbare,module,Magento_ConfigurableProductStaging
 "Page not found.","Fant ikke siden.",module,Magento_Contact
 "Thanks for contacting us with your comments and questions. We'll respond to you very soon.","Takk for at du kontaktet oss med dine kommentarer og spørsmål. Vi vil svare deg snart.",module,Magento_Contact
-"We can't process your request right now. Sorry, that's all we know.","Vi kan ikke behandle forespørselen nå. Beklager, det er alt vi vet.",module,Magento_Contact
+"An error occurred while processing your form. Please try again later.","En feil oppstod under håndtering av skjemaet. Prøv igjen senere.",module,Magento_Contact
+"Name is missing","Navnet mangler",module,Magento_Contact
+"Comment is missing","Kommentar mangler",module,Magento_Contact
+"Invalid email address","Ugyldig e-postadresse",module,Magento_Contact
 "* Required Fields","* Obligatoriske felt",module,Magento_Contact
 "Write Us","Skrive til oss",module,Magento_Contact
 "Jot us a note and we’ll get back to you as quickly as possible.","Send oss et notat, og vi vil komme tilbake til deg så raskt som mulig.",module,Magento_Contact
@@ -3373,8 +3449,8 @@ Email,Email,module,Magento_CustomAttributeManagement
 "The attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscores (_) in this field. The first character should be a letter.","The attribute code is invalid. Please use only letters (a-z), numbers (0-9) or underscores (_) in this field. The first character should be a letter.",module,Magento_CustomAttributeManagement
 "Sign Out","Logg ut",module,Magento_Customer
 "Sign In","Logg inn",module,Magento_Customer
-"You subscribe to our newsletter.","Du abonnerer på vårt nyhetsbrev.",module,Magento_Customer
-"You don't subscribe to our newsletter.","Du abonnerer ikke på nyhetsbrevet.",module,Magento_Customer
+"You are subscribed to our newsletter.","You are subscribed to our newsletter.",module,Magento_Customer
+"You aren't subscribed to our newsletter.","You aren't subscribed to our newsletter.",module,Magento_Customer
 "You have not set a default shipping address.","Du har ikke angitt en standard leveringsadresse.",module,Magento_Customer
 "You have not set a default billing address.","Du har ikke angitt en standard faktureringsadresse.",module,Magento_Customer
 "Address Book",Adressebok,module,Magento_Customer
@@ -3557,6 +3633,7 @@ Customers,Kunder,module,Magento_Customer
 "Please enter a password with at least %1 characters.","Skriv inn et passord med maks %1 tegn.",module,Magento_Customer
 "The password can't begin or end with a space.","Passordet kan ikke begynne eller slutte med et mellomrom.",module,Magento_Customer
 "Minimum of different classes of characters in password is %1. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.","Minimum forskjellige klasser av tegn i passord er %1. Klasser av tegn: små bokstaver, store bokstaver, sifre, spesialtegn.",module,Magento_Customer
+"Password cannot be the same as email address.","Password cannot be the same as email address.",module,Magento_Customer
 "This customer already exists in this store.","Denne kunden finnes allerede i denne butikken.",module,Magento_Customer
 "A customer with the same email already exists in an associated website.","Det finnes allerede en kunde med denne e-postadressen i en tilknyttet webside.",module,Magento_Customer
 "%fieldName is a required field.","%fieldName er et obligatorisk.",module,Magento_Customer
@@ -3628,9 +3705,9 @@ label,label,module,Magento_Customer
 "Your Tax ID cannot be validated.","Your Tax ID cannot be validated.",module,Magento_Customer
 "If you believe this is an error, please contact us at %1","Hvis du tror dette er en feil, vennligst kontakt oss på %1",module,Magento_Customer
 "No such entity with %fieldName = %fieldValue","No such entity with %fieldName = %fieldValue",module,Magento_Customer
-Male,Male,module,Magento_Customer
+Male,Mann,module,Magento_Customer
 Female,Female,module,Magento_Customer
-"Not Specified","Not Specified",module,Magento_Customer
+"Not Specified","Ikke spesifisert",module,Magento_Customer
 "Thank you for registering with","Takk for din registrering med",module,Magento_Customer
 "enter your billing address for proper VAT calculation","angi din faktureringsadresse for riktig mva-beregning",module,Magento_Customer
 "enter your shipping address for proper VAT calculation","angi mottakeradresse for riktig mva-beregning",module,Magento_Customer
@@ -3679,7 +3756,7 @@ Change,Endre,module,Magento_Customer
 "Contact Information",Kontaktinformasjon,module,Magento_Customer
 "Change Password","Endre passord",module,Magento_Customer
 Newsletters,Nyhetsbrev,module,Magento_Customer
-"You subscribe to ""General Subscription"".","Du abonnerer på ""Generelt abonnement"".",module,Magento_Customer
+"You are subscribed to ""General Subscription"".","You are subscribed to ""General Subscription"".",module,Magento_Customer
 or,eller,module,Magento_Customer
 "Default Addresses","Standard adresser",module,Magento_Customer
 "Change Billing Address","Endre faktureringsadresse",module,Magento_Customer
@@ -3690,9 +3767,6 @@ or,eller,module,Magento_Customer
 "Delete Address","Slett adresse",module,Magento_Customer
 "You have no other address entries in your address book.","Du har ingen alternative adresseoppføringer i din adressebok.",module,Magento_Customer
 "* Required Fields","* Obligatoriske felt",module,Magento_Customer
-Company,Firmanavn,module,Magento_Customer
-"Phone Number",Telefonnummer,module,Magento_Customer
-Fax,Faks,module,Magento_Customer
 Address,Adresse,module,Magento_Customer
 "Street Address",Gateadresse,module,Magento_Customer
 "Street Address %1","Gateadresse %1",module,Magento_Customer
@@ -3737,9 +3811,12 @@ Password,Passord,module,Magento_Customer
 "You have signed out and will go to our homepage in 5 seconds.","Du har logget ut og blir sendt til hovedsiden om 5 sekunder.",module,Magento_Customer
 "New Customers","Nye kunder",module,Magento_Customer
 "Creating an account has many benefits: check out faster, keep more than one address, track orders and more.","Opprettelse av konto har mange fordeler: Raskere handel, registrer flere adresser, sjekk ordrestatus m.m.",module,Magento_Customer
+Company,Firmanavn,module,Magento_Customer
+Fax,Faks,module,Magento_Customer
 Gender,Kjønn,module,Magento_Customer
 Name,Navn,module,Magento_Customer
-"Tax/VAT number","Tax/VAT number",module,Magento_Customer
+"Tax/VAT number",Mva-nummer,module,Magento_Customer
+"Phone Number",Telefonnummer,module,Magento_Customer
 "Welcome to %store_name","Velkommen til %store_name",module,Magento_Customer
 "%name,","%name,",module,Magento_Customer
 "Welcome to %store_name.","Velkommen til %store_name.",module,Magento_Customer
@@ -3772,12 +3849,12 @@ Password:,Passord:,module,Magento_Customer
 "If you did not make this request, you can ignore this email and your password will remain the same.","Hvis du ikke har sendt denne forespørselen, kan du ignorere denne e-posten og passordet vil forbli det samme som før.",module,Magento_Customer
 "Your %store_name password has been changed","Ditt %store_name passord er endret",module,Magento_Customer
 "We have received a request to change the following information associated with your account at %store_name: password.","Vi har mottatt en forespørsel om å endre følgende informasjon knyttet til kontoen din hos %store_name: passord.",module,Magento_Customer
-"Checkout out as a new customer","Sjekk ut som en ny kunde",module,Magento_Customer
+"Checkout as a new customer","Checkout as a new customer",module,Magento_Customer
 "Creating an account has many benefits:","Å oprette en konto har mange fordeler:",module,Magento_Customer
 "See order and shipping status","Se ordre og leveringsstatus",module,Magento_Customer
 "Track order history","Spore ordrehistorikk",module,Magento_Customer
 "Check out faster","Sjekk ut raskere",module,Magento_Customer
-"Checkout out using your account","Sjekk ut ved hjelp av din konto",module,Magento_Customer
+"Checkout using your account","Checkout using your account",module,Magento_Customer
 "Email Address",E-postadresse,module,Magento_Customer
 "Are you sure you want to do this?","Er du sikker på at du vil gjøre dette?",module,Magento_Customer
 "Are you sure you want to delete this address?","Er du sikker på at du vil slette denne adressen?",module,Magento_Customer
@@ -3833,6 +3910,9 @@ Strong,Sterk,module,Magento_Customer
 "Use 0 to disable account locking.","Use 0 to disable account locking.",module,Magento_Customer
 "Lockout Time (minutes)","Lockout Time (minutes)",module,Magento_Customer
 "Enable Autocomplete on login/forgot password forms","Aktiver autofullfør på logg inn/glemt passord skjemaer",module,Magento_Customer
+"Account Information Options","Account Information Options",module,Magento_Customer
+"Change Email Template","Change Email Template",module,Magento_Customer
+"Change Email and Password Template","Change Email and Password Template",module,Magento_Customer
 "Name and Address Options","Name and Address Options",module,Magento_Customer
 "Number of Lines in a Street Address","Number of Lines in a Street Address",module,Magento_Customer
 "Leave empty for default (2). Valid range: 1-4","Leave empty for default (2). Valid range: 1-4",module,Magento_Customer
@@ -3848,6 +3928,9 @@ Strong,Sterk,module,Magento_Customer
 "Show Date of Birth","Vis fødselsdato",module,Magento_Customer
 "Show Tax/VAT Number","Vis mva-/ organisasjonsnummer",module,Magento_Customer
 "Show Gender","Vis kjønn",module,Magento_Customer
+"Show Telephone","Show Telephone",module,Magento_Customer
+"Show Company","Show Company",module,Magento_Customer
+"Show Fax","Show Fax",module,Magento_Customer
 "Login Options",Påloggingsvalg,module,Magento_Customer
 "Redirect Customer to Account Dashboard after Logging in","Redirect Customer to Account Dashboard after Logging in",module,Magento_Customer
 "Customer will stay on the current page if ""No"" is selected.","Customer will stay on the current page if ""No"" is selected.",module,Magento_Customer
@@ -3860,13 +3943,12 @@ Strong,Sterk,module,Magento_Customer
 "Rebuild Customer grid index","Rebuild Customer grid index",module,Magento_Customer
 Group,Group,module,Magento_Customer
 "Add New Customer","Add New Customer",module,Magento_Customer
-"Delete items","Slette elementer",module,Magento_Customer
 "Are you sure to delete selected customers?","Er du sikker slette valgte kunder?",module,Magento_Customer
+"Delete items","Slette elementer",module,Magento_Customer
 "Subscribe to Newsletter","Abonnerer på nyhetsbrev",module,Magento_Customer
-"Unsubscribe from Newsletter","Unsubscribe from Newsletter",module,Magento_Customer
 "Are you sure to unsubscribe selected customers from newsletter?","Are you sure to unsubscribe selected customers from newsletter?",module,Magento_Customer
+"Unsubscribe from Newsletter","Unsubscribe from Newsletter",module,Magento_Customer
 "Assign a Customer Group","Assign a Customer Group",module,Magento_Customer
-"Are you sure to assign selected customers to new group?","Are you sure to assign selected customers to new group?",module,Magento_Customer
 Phone,Phone,module,Magento_Customer
 ZIP,ZIP,module,Magento_Customer
 "Customer Since","Customer Since",module,Magento_Customer
@@ -3884,13 +3966,17 @@ Type,Type,module,Magento_Customer
 "If your Magento installation has multiple websites, you can edit the scope to associate the customer with a specific site.","Hvis Magento installasjonen har flere nettsteder, kan du redigere omfanget for å knytte kunden til en bestemt butikk.",module,Magento_Customer
 "Disable Automatic Group Change Based on VAT ID","Deaktiver automatisk Gruppeendring basert på mva-ID",module,Magento_Customer
 "Send Welcome Email From","Send velkomst e-post fra",module,Magento_Customer
-Addresses,Adresser,module,Magento_Customer
 "Are you sure you want to delete this item?","Er du sikker på at du vil slette dette elementet?",module,Magento_Customer
+Addresses,Adresser,module,Magento_Customer
 "Account Dashboard",Kontooversikt,module,Magento_Customer
 "Edit Account Information","Rediger kontoinformasjon",module,Magento_Customer
 "Password forgotten","Passord glemt",module,Magento_Customer
 "My Dashboard","Min Kontooversikt",module,Magento_Customer
 "You are signed out","Du er avlogget",module,Magento_Customer
+"Associate to Website","Associate to Website",module,Magento_Customer
+Prefix,Prefix,module,Magento_Customer
+"Middle Name/Initial","Middle Name/Initial",module,Magento_Customer
+Suffix,Suffix,module,Magento_Customer
 "Store Credit",Kreditt,module,Magento_CustomerBalance
 "Delete Orphan Balances","Slette foreldreløse saldoer",module,Magento_CustomerBalance
 Date,Dato,module,Magento_CustomerBalance
@@ -4330,15 +4416,23 @@ Debug,Feilsøk,module,Magento_Cybersource
 "Minimum Order Total","Minimum ordretotal",module,Magento_Cybersource
 "Maximum Order Total","Maks ordretotal",module,Magento_Cybersource
 "Sort Order","Sort Order",module,Magento_Cybersource
+"Import failed: %1","Import failed: %1",module,Magento_Deploy
 "Class for type ""%1"" was not declared","Klasse for type ""%1"" ble ikke erklært",module,Magento_Deploy
 "%1 does not implement %2","%1 implementerer ikke %2",module,Magento_Deploy
-"Value can't be empty","Verdien kan ikke være tom",module,Magento_Deploy
-"A configuration with this path does not exist or is not sensitive","A configuration with this path does not exist or is not sensitive",module,Magento_Deploy
 "File app/etc/%1 can't be read. Please check if it exists and has read permissions.","File app/etc/%1 can't be read. Please check if it exists and has read permissions.",module,Magento_Deploy
 "There are no sensitive configurations to fill","There are no sensitive configurations to fill",module,Magento_Deploy
+"Value can't be empty","Verdien kan ikke være tom",module,Magento_Deploy
+"A configuration with this path does not exist or is not sensitive","A configuration with this path does not exist or is not sensitive",module,Magento_Deploy
 "Cannot switch into given mode ""%1""","Kan ikke bytte til gitt modus ""%1""",module,Magento_Deploy
+"Wrong logger interface specified.","Wrong logger interface specified.",module,Magento_Deploy
+"Hash has not been saved.","Hash has not been saved.",module,Magento_Deploy
+"Parameter ""class"" must be present.","Parameter ""class"" must be present.",module,Magento_Deploy
+"The configuration file has changed. Run app:config:import or setup:upgrade command to synchronize configuration.","The configuration file has changed. Run app:config:import or setup:upgrade command to synchronize configuration.",module,Magento_Deploy
+"Wrong type specified: '%1'","Wrong type specified: '%1'",module,Magento_Deploy
+"Wrong queue type specified.","Wrong queue type specified.",module,Magento_Deploy
 "Compilation from source:","Compilation from source:",module,Magento_Deploy
 "Wrong deploy strategy type: %1","Wrong deploy strategy type: %1",module,Magento_Deploy
+"Some error","Some error",module,Magento_Deploy
 "some message","some message",module,Magento_Deploy
 "Format for IDE '%1' is not supported","Formatet for IDE ""%1"" støttes ikke",module,Magento_Developer
 "Client side compilation doesn't work in production mode","Klientside kompilering fungerer ikke i produksjonsmodus",module,Magento_Developer
@@ -4552,6 +4646,7 @@ Shareable,Shareable,module,Magento_Downloadable
 Samples,Samples,module,Magento_Downloadable
 "Use Default Value","Use Default Value",module,Magento_Downloadable
 sample,sample,module,Magento_Downloadable
+"Is this a downloadable Product?","Is this a downloadable Product?",module,Magento_Downloadable
 "Add links to your product files here.","Add links to your product files here.",module,Magento_Downloadable
 "[STORE VIEW]","[STORE VIEW]",module,Magento_Downloadable
 [GLOBAL],[GLOBAL],module,Magento_Downloadable
@@ -4746,12 +4841,15 @@ label,label,module,Magento_Eav
 "Wrong entity ID","Wrong entity ID",module,Magento_Eav
 "Wrong attribute set ID","Wrong attribute set ID",module,Magento_Eav
 "Wrong attribute group ID","Wrong attribute group ID",module,Magento_Eav
+"Attribute with ID: ""%1"" does not exist","Attribute with ID: ""%1"" does not exist",module,Magento_Eav
 "AttributeSet does not exist.","AttributeSet does not exist.",module,Magento_Eav
 hello,hello,module,Magento_Eav
 "Some internal exception message.","Some internal exception message.",module,Magento_Eav
 "The value of attribute not valid","The value of attribute not valid",module,Magento_Eav
 "EAV types and attributes","EAV types and attributes",module,Magento_Eav
 "Entity types declaration cache","Entity types declaration cache",module,Magento_Eav
+"There is no such data mapper ""%1"" for interface %2","There is no such data mapper ""%1"" for interface %2",module,Magento_Elasticsearch
+"Data mapper ""%1"" must implement interface %2","Data mapper ""%1"" must implement interface %2",module,Magento_Elasticsearch
 "We were unable to perform the search because of a search engine misconfiguration.","Vi kunne ikke utføre søket på grunn av en feilkonfigurasjon i søkemotoren.",module,Magento_Elasticsearch
 "Could not ping search engine: %1","Kan ikke pinge søkemotor: %1",module,Magento_Elasticsearch
 "Elasticsearch Server Hostname","Elasticsearch Server Vertsnavn",module,Magento_Elasticsearch
@@ -4782,7 +4880,7 @@ Reset,Nullstill,module,Magento_Email
 "Insert Variable...","Insert Variable...",module,Magento_Email
 "Template Content",Mal-innholdet,module,Magento_Email
 "Template Styles","Template Styles",module,Magento_Email
-Preview,Preview,module,Magento_Email
+Preview,Forhåndsvis,module,Magento_Email
 Unknown,Unknown,module,Magento_Email
 "You deleted the email template.","You deleted the email template.",module,Magento_Email
 "The email template is currently being used.","The email template is currently being used.",module,Magento_Email
@@ -4790,9 +4888,9 @@ Unknown,Unknown,module,Magento_Email
 "We can't find an email template to delete.","We can't find an email template to delete.",module,Magento_Email
 "Edit Template","Edit Template",module,Magento_Email
 "Edit System Template","Edit System Template",module,Magento_Email
-"New Template","New Template",module,Magento_Email
-"New System Template","New System Template",module,Magento_Email
-"Email Templates","Email Templates",module,Magento_Email
+"New Template","Ny mal",module,Magento_Email
+"New System Template","Ny Systemmal",module,Magento_Email
+"Email Templates","E-post maler",module,Magento_Email
 "Email Preview","Email Preview",module,Magento_Email
 "An error occurred. The email template can not be opened for preview.","An error occurred. The email template can not be opened for preview.",module,Magento_Email
 "This email template no longer exists.","This email template no longer exists.",module,Magento_Email
@@ -4815,9 +4913,10 @@ Unknown,Unknown,module,Magento_Email
 Country,Land,module,Magento_Email
 Region/State,Region/State,module,Magento_Email
 "Zip/Postal Code","Zip/Postal Code",module,Magento_Email
-City,City,module,Magento_Email
+City,By,module,Magento_Email
 "Street Address 1","Gateadresse 1",module,Magento_Email
 "Street Address 2","Gateadresse 2",module,Magento_Email
+"VAT Number","VAT Number",module,Magento_Email
 "Store Contact Information","Store Contact Information",module,Magento_Email
 %1,%1,module,Magento_Email
 "Template Variables","Template Variables",module,Magento_Email
@@ -4832,7 +4931,7 @@ City,City,module,Magento_Email
 "<pre> %1 </pre>","<pre> %1 </pre>",module,Magento_Email
 "CSS inlining error:","CSS inlining error:",module,Magento_Email
 "Error filtering template: %s","Error filtering template: %s",module,Magento_Email
-"We're sorry, an error has occurred while generating this email.","We're sorry, an error has occurred while generating this email.",module,Magento_Email
+"We're sorry, an error has occurred while generating this content.","We're sorry, an error has occurred while generating this content.",module,Magento_Email
 "Invalid sender data","Ugyldig sender-data",module,Magento_Email
 Title,Title,module,Magento_Email
 "Load default template","Load default template",module,Magento_Email
@@ -4851,15 +4950,15 @@ Updated,Updated,module,Magento_Email
 Subject,Subject,module,Magento_Email
 "Template Type","Template Type",module,Magento_Email
 Action,Action,module,Magento_Email
-"Logo Image",Logobilde,module,Magento_Email
 "Allowed file types: jpg, jpeg, gif, png. To optimize logo for high-resolution displays, upload an image that is 3x normal size and then specify 1x dimensions in the width/height fields below.","Allowed file types: jpg, jpeg, gif, png. To optimize logo for high-resolution displays, upload an image that is 3x normal size and then specify 1x dimensions in the width/height fields below.",module,Magento_Email
+"Logo Image",Logobilde,module,Magento_Email
 "Logo Image Alt","Logobilde Alt",module,Magento_Email
-"Logo Width","Logo bredde",module,Magento_Email
 "Necessary only if an image has been uploaded above. Enter number of pixels, without appending ""px"".","Nødvendig hvis et bilde er lastet inn. Angi antall piksler uten å tilføye ""px"".",module,Magento_Email
-"Logo Height","Logo Height",module,Magento_Email
+"Logo Width","Logo bredde",module,Magento_Email
 "Necessary only if an image has been uploaded above. Enter image height size in pixels without appending ""px"".","Necessary only if an image has been uploaded above. Enter image height size in pixels without appending ""px"".",module,Magento_Email
-"Header Template",Topptekstmal,module,Magento_Email
+"Logo Height","Logo Height",module,Magento_Email
 "Email template chosen based on theme fallback, when the ""Default"" option is selected.","Email template chosen based on theme fallback, when the ""Default"" option is selected.",module,Magento_Email
+"Header Template",Topptekstmal,module,Magento_Email
 "Footer Template","Footer Template",module,Magento_Email
 "Change Encryption Key","Endre krypteringsnøkkel",module,Magento_EncryptionKey
 "Encryption Key",Krypteringsnøkkel,module,Magento_EncryptionKey
@@ -5246,7 +5345,7 @@ OK,OK,module,Magento_GiftMessage
 "Gift Options",Gavealternativ,module,Magento_GiftMessage
 "Gift Message",Gavemelding,module,Magento_GiftMessage
 "Do you have any gift items in your order?","Do you have any gift items in your order?",module,Magento_GiftMessage
-"Add gift options","Legg til gavealternativer",module,Magento_GiftMessage
+"Add Gift Options","Add Gift Options",module,Magento_GiftMessage
 "Gift Options for the Entire Order","Gavealternativ for hele bestillingen",module,Magento_GiftMessage
 "Leave this box blank if you don't want to leave a gift message for the entire order.","La boksen være tom hvis du ikke ønsker å legge til en gavemelding for hele bestillingen.",module,Magento_GiftMessage
 "Gift Options for Individual Items","Gavealternativ for enkelte varer",module,Magento_GiftMessage
@@ -5254,7 +5353,7 @@ OK,OK,module,Magento_GiftMessage
 "Leave a box blank if you don't want to add a gift message for that item.","La boksen stå tom hvis du ikke vil legge til en gavemelding for varen.",module,Magento_GiftMessage
 "Add Gift Options for the Entire Order","Legg til gavealternativer for hele bestillingen",module,Magento_GiftMessage
 "You can leave this box blank if you don't want to add a gift message for this address.","Du kan la boksen være tom hvis du ikke vil legge til en gavemelding for denne adressen.",module,Magento_GiftMessage
-"Add gift options for Individual Items","Legg til gavealternativ for enkelte varer",module,Magento_GiftMessage
+"Add Gift Options for Individual Items","Add Gift Options for Individual Items",module,Magento_GiftMessage
 "You can leave this box blank if you don't want to add a gift message for the item.","Du kan la boksen stå tom hvis du ikke ønsker å legge til en gavemelding for varen.",module,Magento_GiftMessage
 "Gift Message (optional)","Gavemelding (valgfritt)",module,Magento_GiftMessage
 To:,Til:,module,Magento_GiftMessage
@@ -5753,6 +5852,8 @@ Download,Download,module,Magento_ImportExport
 Import,Import,module,Magento_ImportExport
 "Import Settings","Import Settings",module,Magento_ImportExport
 "Import Behavior","Import Behavior",module,Magento_ImportExport
+"Stop on Error","Stop on Error",module,Magento_ImportExport
+"Skip error entries","Skip error entries",module,Magento_ImportExport
 "Allowed Errors Count","Allowed Errors Count",module,Magento_ImportExport
 "Please specify number of errors to halt import process","Please specify number of errors to halt import process",module,Magento_ImportExport
 "Field separator","Field separator",module,Magento_ImportExport
@@ -5776,11 +5877,12 @@ Status,Status,module,Magento_ImportExport
 "Import successfully done","Import successfully done",module,Magento_ImportExport
 "Sorry, but the data is invalid or the file is not uploaded.","Sorry, but the data is invalid or the file is not uploaded.",module,Magento_ImportExport
 "The file was not uploaded.","The file was not uploaded.",module,Magento_ImportExport
-"This file is empty. Please try another one.","This file is empty. Please try another one.",module,Magento_ImportExport
 "Data validation failed. Please fix the following errors and upload the file again.","Data validation failed. Please fix the following errors and upload the file again.",module,Magento_ImportExport
+"Checked rows: %1, checked entities: %2, invalid rows: %3, total errors: %4","Checked rows: %1, checked entities: %2, invalid rows: %3, total errors: %4",module,Magento_ImportExport
+"This file is empty. Please try another one.","This file is empty. Please try another one.",module,Magento_ImportExport
+"Please fix errors and re-upload file or simply press ""Import"" button to skip rows with errors","Please fix errors and re-upload file or simply press ""Import"" button to skip rows with errors",module,Magento_ImportExport
 "File is valid! To start import process press ""Import"" button","File is valid! To start import process press ""Import"" button",module,Magento_ImportExport
 "The file is valid, but we can't import it for some reason.","The file is valid, but we can't import it for some reason.",module,Magento_ImportExport
-"Checked rows: %1, checked entities: %2, invalid rows: %3, total errors: %4","Checked rows: %1, checked entities: %2, invalid rows: %3, total errors: %4",module,Magento_ImportExport
 "Show more","Vis mer",module,Magento_ImportExport
 "Additional data",Tilleggsdata,module,Magento_ImportExport
 "Following Error(s) has been occurred during importing process:","Following Error(s) has been occurred during importing process:",module,Magento_ImportExport
@@ -5923,6 +6025,7 @@ Reauthorize,Reauthorize,module,Magento_Integration
 "Integration '%1' has been sent for re-authorization.","Integration '%1' has been sent for re-authorization.",module,Magento_Integration
 "Integration '%1' has been sent for activation.","Integration '%1' has been sent for activation.",module,Magento_Integration
 "A consumer with ID %1 does not exist","A consumer with ID %1 does not exist",module,Magento_Integration
+title,title,module,Magento_Integration
 "You did not sign in correctly or your account is temporarily disabled.","You did not sign in correctly or your account is temporarily disabled.",module,Magento_Integration
 "This user has no tokens.","Denne brukeren har ikke tokener.",module,Magento_Integration
 "The tokens could not be revoked.","The tokens could not be revoked.",module,Magento_Integration
@@ -5984,12 +6087,18 @@ Allow,Allow,module,Magento_Integration
 Done,Done,module,Magento_Integration
 Extensions,Extensions,module,Magento_Integration
 OAuth,OAuth,module,Magento_Integration
+"Access Token Expiration","Access Token Expiration",module,Magento_Integration
+"Customer Token Lifetime (hours)","Customer Token Lifetime (hours)",module,Magento_Integration
+"Admin Token Lifetime (hours)","Admin Token Lifetime (hours)",module,Magento_Integration
 "Cleanup Settings","Cleanup Settings",module,Magento_Integration
 "Cleanup Probability","Cleanup Probability",module,Magento_Integration
 "Expiration Period","Expiration Period",module,Magento_Integration
 "Consumer Settings","Consumer Settings",module,Magento_Integration
 "OAuth consumer credentials HTTP Post maxredirects","OAuth consumer credentials HTTP Post maxredirects",module,Magento_Integration
 "OAuth consumer credentials HTTP Post timeout","OAuth consumer credentials HTTP Post timeout",module,Magento_Integration
+"Authentication Locks","Authentication Locks",module,Magento_Integration
+"Maximum Login Failures to Lock Out Account","Maximum Login Failures to Lock Out Account",module,Magento_Integration
+"Lockout Time (seconds)","Lockout Time (seconds)",module,Magento_Integration
 "Integrations Configuration","Integrations Configuration",module,Magento_Integration
 "Integration configuration file","Integration configuration file",module,Magento_Integration
 "Integrations API Configuration","Integrations API Configuration",module,Magento_Integration
@@ -6312,7 +6421,6 @@ Partners,Partnere,module,Magento_Marketplace
 "Read More","Les mer",module,Magento_Marketplace
 "Partner Page",Partner-side,module,Magento_Marketplace
 "No partners were found","No partners were found",module,Magento_Marketplace
-"Find Partners & Extensions","Find Partners & Extensions",module,Magento_Marketplace
 Synchronize,Synkronisere,module,Magento_MediaStorage
 "Synchronizing %1 to %2","Synkronisere %1 til %2",module,Magento_MediaStorage
 Synchronizing...,Synkroniserer...,module,Magento_MediaStorage
@@ -6476,6 +6584,7 @@ Actions,Actions,module,Magento_MultipleWishlist
 View,View,module,Magento_MultipleWishlist
 "Your search returned no results.","Your search returned no results.",module,Magento_MultipleWishlist
 "Wish List","Wish List",module,Magento_MultipleWishlist
+"Create Wish List","Create Wish List",module,Magento_MultipleWishlist
 "Edit Wish List","Edit Wish List",module,Magento_MultipleWishlist
 Edit,Rediger,module,Magento_MultipleWishlist
 "Public Wish List","Public Wish List",module,Magento_MultipleWishlist
@@ -6527,40 +6636,41 @@ Total,Totalt,module,Magento_Multishipping
 "Total for this address","Totalt for denne adressen",module,Magento_Multishipping
 "Shipping Methods",Leveringsmåte,module,Magento_Multishipping
 "Edit Address","Rediger adresse",module,Magento_Multishipping
-"Edit Billing Address","Edit Billing Address",module,Magento_Multishipping
+"Edit Billing Address","Redigere leveringsadresse",module,Magento_Multishipping
 "Edit Shipping Address","Redigere leveringsadresse",module,Magento_Multishipping
 "Create Billing Address","Opprette faktureringsadresse",module,Magento_Multishipping
 "Create Shipping Address","Opprette leveringsadresse",module,Magento_Multishipping
-"Data saving problem","Data saving problem",module,Magento_Multishipping
-"We cannot open the overview page.","We cannot open the overview page.",module,Magento_Multishipping
-"Please agree to all Terms and Conditions before placing the order.","Please agree to all Terms and Conditions before placing the order.",module,Magento_Multishipping
+"Data saving problem","Data lagring problem",module,Magento_Multishipping
+"We cannot open the overview page.","Vi kan ikke åpne oversiktssiden.",module,Magento_Multishipping
+"Please agree to all Terms and Conditions before placing the order.","Vennligst godta alle vilkår og betingelser før bestilling.",module,Magento_Multishipping
 "Order place error","Order place error",module,Magento_Multishipping
 "Maximum qty allowed for Shipping to multiple addresses is %1","Maksimalt antall tillatt for levering til flere adresser er %1",module,Magento_Multishipping
 "Please check shipping address information.","Kontroller informasjon om leveringsadresse.",module,Magento_Multishipping
-"Please check billing address information.","Please check billing address information.",module,Magento_Multishipping
+"Please check billing address information.","Vennligst kontroller faktureringsadresse.",module,Magento_Multishipping
 "Please select shipping methods for all addresses.","Velg leveringsmetode for alle adresser.",module,Magento_Multishipping
-"A payment method is not defined.","A payment method is not defined.",module,Magento_Multishipping
+"A payment method is not defined.","En betalingsmåte er ikke definert.",module,Magento_Multishipping
 "The requested payment method is not available for multishipping.","Den angitte betalingsmetoden er ikke tilgjengelig for multifrakt.",module,Magento_Multishipping
 "Item not found or already ordered","Item not found or already ordered",module,Magento_Multishipping
-"Please specify a payment method.","Please specify a payment method.",module,Magento_Multishipping
+"Please specify a payment method.","Velg en betalingsmåte.",module,Magento_Multishipping
 "Please check shipping addresses information.","Kontroller informasjon om leveringsadresse.",module,Magento_Multishipping
 "Please specify shipping methods for all addresses.","Angi leveringsmetode for alle adresser.",module,Magento_Multishipping
+"Some addresses cannot be used due to country-specific configurations.","Some addresses cannot be used due to country-specific configurations.",module,Magento_Multishipping
 "Select Addresses","Select Addresses",module,Magento_Multishipping
 "Shipping Information",Leveringsinformasjon,module,Magento_Multishipping
-"Billing Information","Billing Information",module,Magento_Multishipping
+"Billing Information",Fakturainformasjon,module,Magento_Multishipping
 "Place Order",Bestill,module,Magento_Multishipping
 "Order Success","Order Success",module,Magento_Multishipping
 "Default Billing","Default Billing",module,Magento_Multishipping
 "Default Shipping","Standard frakt",module,Magento_Multishipping
-"Select Address","Select Address",module,Magento_Multishipping
+"Select Address","Velg adresse",module,Magento_Multishipping
 "Add New Address","Legg til ny adresse",module,Magento_Multishipping
 "Back to Billing Information","Back to Billing Information",module,Magento_Multishipping
 "Please select a shipping address for applicable items.","Velg en leveringsadresse for varene.",module,Magento_Multishipping
-Product,Product,module,Magento_Multishipping
+Product,Produkt,module,Magento_Multishipping
 Qty,Antall,module,Magento_Multishipping
-"Send To","Send To",module,Magento_Multishipping
+"Send To","Send Til",module,Magento_Multishipping
 "A shipping selection is not applicable.","Fraktvalg er ikke tilgjengelig.",module,Magento_Multishipping
-Actions,Actions,module,Magento_Multishipping
+Actions,Handlinger,module,Magento_Multishipping
 "Remove Item","Fjern produkt",module,Magento_Multishipping
 "Remove item","Fjern produkt",module,Magento_Multishipping
 "Go to Shipping Information","Gå til fraktinformasjon",module,Magento_Multishipping
@@ -6568,8 +6678,8 @@ Actions,Actions,module,Magento_Multishipping
 "Enter a New Address","Angi en ny adresse",module,Magento_Multishipping
 "Back to Shopping Cart","Tilbake til handlekurv",module,Magento_Multishipping
 "Billing Address",Faktureringsadresse,module,Magento_Multishipping
-Change,Change,module,Magento_Multishipping
-"Payment Method","Payment Method",module,Magento_Multishipping
+Change,Endre,module,Magento_Multishipping
+"Payment Method",Betalingsmåte,module,Magento_Multishipping
 "Go to Review Your Order","Go to Review Your Order",module,Magento_Multishipping
 "Back to Shipping Information","Tilbake til leveringsinformasjon",module,Magento_Multishipping
 "Other items in your order","Other items in your order",module,Magento_Multishipping
@@ -6579,7 +6689,7 @@ Change,Change,module,Magento_Multishipping
 "Check Out with Multiple Addresses","Check Out with Multiple Addresses",module,Magento_Multishipping
 "Address %1 <span>of %2</span>","Address %1 <span>of %2</span>",module,Magento_Multishipping
 "Shipping To","Shipping To",module,Magento_Multishipping
-"Shipping Method","Shipping Method",module,Magento_Multishipping
+"Shipping Method",Leveringsmåte,module,Magento_Multishipping
 "Incl. Tax","Incl. Tax",module,Magento_Multishipping
 "Excl. Tax","Excl. Tax",module,Magento_Multishipping
 "Order Review","Order Review",module,Magento_Multishipping
@@ -6588,26 +6698,26 @@ Edit,Rediger,module,Magento_Multishipping
 Price,Pris,module,Magento_Multishipping
 Subtotal,Delsum,module,Magento_Multishipping
 Items,Produkter,module,Magento_Multishipping
-"Grand Total:","Grand Total:",module,Magento_Multishipping
+"Grand Total:",Totalsum:,module,Magento_Multishipping
 "Submitting order information...","Submitting order information...",module,Magento_Multishipping
 "Sorry, no quotes are available for this order right now.","Sorry, no quotes are available for this order right now.",module,Magento_Multishipping
 "Continue to Billing Information","Continue to Billing Information",module,Magento_Multishipping
 "Back to Select Addresses","Back to Select Addresses",module,Magento_Multishipping
-"Thank you for your purchase!","Thank you for your purchase!",module,Magento_Multishipping
+"Thank you for your purchase!","Takk for bestillingen!",module,Magento_Multishipping
 "Thanks for your order. We'll email you order details and tracking information.","Thanks for your order. We'll email you order details and tracking information.",module,Magento_Multishipping
-"Your order numbers are:","Your order numbers are:",module,Magento_Multishipping
-"Your order number is:","Your order number is:",module,Magento_Multishipping
+"Your order numbers are:","Ordrenummere ditt er:",module,Magento_Multishipping
+"Your order number is:","Ordrenummeret ditt er:",module,Magento_Multishipping
 "Continue Shopping","Fortsett å handle",module,Magento_Multishipping
 "We can't complete your order because you don't have a payment method set up.","We can't complete your order because you don't have a payment method set up.",module,Magento_Multishipping
-"Please choose a payment method.","Please choose a payment method.",module,Magento_Multishipping
+"Please choose a payment method.","Vennligst velg en betalingsmåte.",module,Magento_Multishipping
 "Multishipping Settings Section","Multishipping Settings Section",module,Magento_Multishipping
 "Multishipping Settings","Multishipping Settings",module,Magento_Multishipping
-Options,Options,module,Magento_Multishipping
+Options,Alternativer,module,Magento_Multishipping
 "Allow Shipping to Multiple Addresses","Tillate levering til flere adresser",module,Magento_Multishipping
 "Maximum Qty Allowed for Shipping to Multiple Addresses","Maksimalt antall tillatt for levering til flere adresser",module,Magento_Multishipping
-"Review Order","Review Order",module,Magento_Multishipping
+"Review Order","Gå igjennom ordren",module,Magento_Multishipping
 "Select Shipping Method","Velg leveringsmåte",module,Magento_Multishipping
-"We received your order!","We received your order!",module,Magento_Multishipping
+"We received your order!","Vi har mottatt din ordre!",module,Magento_Multishipping
 "Message has been rejected: %1","Meldingen ble avvist: %1",module,Magento_MysqlMq
 "MySQL Message Queue Cleanup","MySQL meldingkø-opprydding",module,Magento_MysqlMq
 "All the times are in minutes. Use ""0"" if you want to skip automatic clearance.","Alle tider er i minutter. Bruk ""0"" hvis du vil hoppe over automatisk klaring.",module,Magento_MysqlMq
@@ -6790,6 +6900,7 @@ Unconfirmed,Unconfirmed,module,Magento_Newsletter
 Store,Store,module,Magento_Newsletter
 "Store View","Store View",module,Magento_Newsletter
 "Newsletter Subscriptions","Nyhetsbrev abonnement",module,Magento_Newsletter
+"Sign Up for Our Newsletter","Sign Up for Our Newsletter",module,Magento_Newsletter
 "Make Check payable to:","Gjør sjekk betalbar til:",module,Magento_OfflinePayments
 "Send Check to:","Send sjekk til:",module,Magento_OfflinePayments
 "Purchase Order Number",Innkjøpsordrenummer,module,Magento_OfflinePayments
@@ -6873,6 +6984,7 @@ Import,Import,module,Magento_OfflineShipping
 "Ttl value ""%1"" is not valid. Please use only numbers equal or greater than zero.","TTL-verdien ""%1"" er ikke gyldig. Bruk bare tall som er lik eller større enn null.",module,Magento_PageCache
 "Built-in Cache","Innebygd Cache",module,Magento_PageCache
 "Varnish Cache (Recommended)","Varnish Cache (anbefalt)",module,Magento_PageCache
+"Unsupported varnish version","Unsupported varnish version",module,Magento_PageCache
 "Full Page Cache","Fullside Cache",module,Magento_PageCache
 "Caching Application",Cache-program,module,Magento_PageCache
 "Varnish Configuration",Varnish-konfigurasjon,module,Magento_PageCache
@@ -6950,6 +7062,18 @@ No,No,module,Magento_Payment
 "Payment Methods Section","Payment Methods Section",module,Magento_Payment
 "Payment Services","Payment Services",module,Magento_Payment
 "Payment Methods","Payment Methods",module,Magento_Payment
+"<a href=""https:/financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
+                                <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
+                                from PayPal Credit&#174;. Your customers have more time to pay, while you get paid up front – at no additional cost to you.
+                                Use PayPal’ s free banner ads that let you advertise PayPal Credit&#174; financing as a payment option when your customers check out with PayPal.
+                                The PayPal Advertising Program has been shown to generate additional purchases as well as increase consumer's average purchase sizes by 15%
+                                or more. <a href=""https:/financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">See Details</a>.","<a href=""https:/financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
+                                <strong>Give your sales a boost when you advertise financing.</strong><br/>PayPal helps turn browsers into buyers with financing
+                                from PayPal Credit&#174;. Your customers have more time to pay, while you get paid up front – at no additional cost to you.
+                                Use PayPal’ s free banner ads that let you advertise PayPal Credit&#174; financing as a payment option when your customers check out with PayPal.
+                                The PayPal Advertising Program has been shown to generate additional purchases as well as increase consumer's average purchase sizes by 15%
+                                or more. <a href=""https:/financing.paypal.com/ppfinportal/content/forrester"" target=""_blank"">See Details</a>.",module,Magento_Paypal
+payflowpro,payflowpro,module,Magento_Paypal
 "Billing Agreements",Faktureringsavtaler,module,Magento_Paypal
 ID,ID,module,Magento_Paypal
 Email,E-post,module,Magento_Paypal
@@ -7136,8 +7260,8 @@ Dispute,Dispute,module,Magento_Paypal
 "N/A. Retry","N/A. Retry",module,Magento_Paypal
 "N/A. Service not Supported","N/A. Service not Supported",module,Magento_Paypal
 "N/A. Unavailable","N/A. Unavailable",module,Magento_Paypal
-"Matched whole nine-didgit ZIP (no Address)","Matched whole nine-didgit ZIP (no Address)",module,Magento_Paypal
-"Yes. Matched Address and five-didgit ZIP","Yes. Matched Address and five-didgit ZIP",module,Magento_Paypal
+"Matched whole nine-digit ZIP (no Address)","Matched whole nine-digit ZIP (no Address)",module,Magento_Paypal
+"Yes. Matched Address and five-digit ZIP","Yes. Matched Address and five-digit ZIP",module,Magento_Paypal
 "All the address information matched","All the address information matched",module,Magento_Paypal
 "None of the address information matched","None of the address information matched",module,Magento_Paypal
 "Part of the address information matched","Part of the address information matched",module,Magento_Paypal
@@ -7565,7 +7689,7 @@ User,User,module,Magento_Paypal
 "Reject Transaction if:","Reject Transaction if:",module,Magento_Paypal
 "AVS Street Does Not Match","AVS Street Does Not Match",module,Magento_Paypal
 "AVS Zip Does Not Match","AVS Zip Does Not Match",module,Magento_Paypal
-"International AVS Indicator Does Not Match","International AVS Indicator Does Not Match",module,Magento_Paypal
+"Card Issuer Is Outside The United States","Card Issuer Is Outside The United States",module,Magento_Paypal
 "Card Security Code Does Not Match","Card Security Code Does Not Match",module,Magento_Paypal
 "Payflow Pro and Express Checkout","Payflow Pro and Express Checkout",module,Magento_Paypal
 "<a href=""https:/financing.paypal.com/ppfinportal/content/whyUseFinancing"" target=""_blank"">Why Advertise Financing?</a><br/>
@@ -7702,6 +7826,7 @@ Delete,Delete,module,Magento_ProductVideo
 "Shipping address is not set","Leveringsadresse er ikke angitt",module,Magento_Quote
 "The requested Payment Method is not available.","The requested Payment Method is not available.",module,Magento_Quote
 "We found an invalid request for adding product to quote.","We found an invalid request for adding product to quote.",module,Magento_Quote
+"Product that you are trying to add is not available.","Product that you are trying to add is not available.",module,Magento_Quote
 "This is the wrong quote item id to update configuration.","This is the wrong quote item id to update configuration.",module,Magento_Quote
 "This shipping method is not available. To use this shipping method, please contact us.","Denne leveringsmetode er ikke tilgjengelig. For å bruk denne leveringsmetode, vennligst kontakt oss.",module,Magento_Quote
 "The address model is not defined.","The address model is not defined.",module,Magento_Quote
@@ -7739,6 +7864,7 @@ Subtotal,Delsum,module,Magento_Quote
 "Only 1 shipping assignment can be set","Bare 1 frakttildeling kan angis",module,Magento_Quote
 "This item price or quantity is not valid for checkout.","This item price or quantity is not valid for checkout.",module,Magento_Quote
 "Please check the shipping address information. %1","Vennligst kontroller leveringsadressen. %1",module,Magento_Quote
+"Some addresses cannot be used due to country-specific configurations.","Some addresses cannot be used due to country-specific configurations.",module,Magento_Quote
 "Please specify a shipping method.","Angi en leveringsmetode.",module,Magento_Quote
 "Please check the billing address information. %1","Please check the billing address information. %1",module,Magento_Quote
 "Please select a valid payment method.","Velg en gyldig betalingsmåte.",module,Magento_Quote
@@ -7750,10 +7876,14 @@ Tax,Tax,module,Magento_Quote
 "Cannot set shipping method. %1","Kan ikke angi forsendelsesmåte. %1",module,Magento_Quote
 "Shipping method is not applicable for empty cart","Shipping method is not applicable for empty cart",module,Magento_Quote
 "Cart contains virtual product(s) only. Shipping method is not applicable.","Cart contains virtual product(s) only. Shipping method is not applicable.",module,Magento_Quote
+"Carrier with such method not found: %1, %2","Carrier with such method not found: %1, %2",module,Magento_Quote
+"Cannot set shipping method. %1","Kan ikke angi forsendelsesmåte. %1",module,Magento_Quote
+"Minimum Order Amount Exceeded.","Minimum Order Amount Exceeded.",module,Magento_Quote
+error123,feil123,module,Magento_Quote
 error345,feil345,module,Magento_Quote
-"Incorrect amount","Incorrect amount",module,Magento_Quote
 Carts,Carts,module,Magento_Quote
 "Manage carts","Manage carts",module,Magento_Quote
+"Invalid state change requested","Invalid state change requested",module,Magento_Quote
 "This rule is assigned to %1 automated reminder rule(s). Deleting this rule will automatically unassign it.","Denne regelen er tilordnet %1 automatiserte påminnelseregler. Sletting av denne regelen vil automatisk fraordne det.",module,Magento_Reminder
 "Automated Email Marketing Reminder Rules","Påminnelsesregler for automatiserte markedsførings-eposter",module,Magento_Reminder
 "Add New Rule","Legg til ny regel",module,Magento_Reminder
@@ -8136,6 +8266,8 @@ Action,Action,module,Magento_Reports
 Report,Report,module,Magento_Reports
 Description,Beskrivelse,module,Magento_Reports
 undefined,undefined,module,Magento_Reports
+"Item in Cart","Item in Cart",module,Magento_Reports
+Cart,Cart,module,Magento_Reports
 "Save Review","Lagre anmeldelse",module,Magento_Review
 "New Review","Ny anmeldelse",module,Magento_Review
 "Review Details","Se gjennom detaljene",module,Magento_Review
@@ -8457,7 +8589,7 @@ Returns,Retur,module,Magento_Rma
 "Create New RMA","Opprette ny RMA",module,Magento_Rma
 "Please Select Order","Vennligst velg rekkefølge",module,Magento_Rma
 Order,Rekkefølge,module,Magento_Rma
-"Purchase Point","Purchase Point",module,Magento_Rma
+"Purchase Point",Kjøpspunkt,module,Magento_Rma
 Purchased,Kjøpt,module,Magento_Rma
 "Customer First Name","Customer First Name",module,Magento_Rma
 "Customer Last Name","Kunde etternavn",module,Magento_Rma
@@ -8655,6 +8787,7 @@ Closed,Closed,module,Magento_Rma
 "ID cannot be an empty","ID cannot be an empty",module,Magento_Rma
 "Requested entity doesn't exist","Requested entity doesn't exist",module,Magento_Rma
 "Please enter a valid comment.","Please enter a valid comment.",module,Magento_Rma
+"No such entity with %1 = %2, %3 = %4","No such entity with %1 = %2, %3 = %4",module,Magento_Rma
 "Invalid carrier: %1","Invalid carrier: %1",module,Magento_Rma
 "We need more information to create your shipping label(s). Please verify your store information and shipping settings.","Vi trenger mer informasjon for å opprette din(e) fraktetikett(er). Vennligst kontroller din butikkinformasjon og leveringsalternativ.",module,Magento_Rma
 "No detail for number ""%1""","No detail for number ""%1""",module,Magento_Rma
@@ -8808,6 +8941,7 @@ Feed,Feed,module,Magento_Rss
 "RSS Feeds",RSS-feeds,module,Magento_Rss
 "Rss Config",RSS-konfigurasjon,module,Magento_Rss
 "Enable RSS","Aktiver RSS",module,Magento_Rss
+RSS,RSS,module,Magento_Rss
 Apply,Bruk,module,Magento_Rule
 "Please choose a valid discount amount.","Velg et gyldig rabattbeløp.",module,Magento_Rule
 "End Date must follow Start Date.","Sluttdatoen må følge startdato.",module,Magento_Rule
@@ -9151,6 +9285,8 @@ Guest,Guest,module,Magento_Sales
 "Please enter the street.","Angi gaten.",module,Magento_Sales
 "Please enter the city.","Angi byen.",module,Magento_Sales
 "Please enter the phone number.","Skriv inn telefonnummeret.",module,Magento_Sales
+"Please enter the company.","Please enter the company.",module,Magento_Sales
+"Please enter the fax number.","Please enter the fax number.",module,Magento_Sales
 "Please enter the zip/postal code.","Angi postnummeret.",module,Magento_Sales
 "Please enter the country.","Angi land.",module,Magento_Sales
 "Please enter the state/province.","Angi delstaten/området.",module,Magento_Sales
@@ -9317,10 +9453,10 @@ Closed,Closed,module,Magento_Sales
 New,Ny,module,Magento_Sales
 "test message","test message",module,Magento_Sales
 "Email has not been sent","Email has not been sent",module,Magento_Sales
-"Authorized amount of %1.","Authorized amount of %1.",module,Magento_Sales
+"Authorized amount of %1.","Autorisert beløp av %1.",module,Magento_Sales
 "We will authorize %1 after the payment is approved at the payment gateway.","We will authorize %1 after the payment is approved at the payment gateway.",module,Magento_Sales
-"Authorized amount of %1. Order is suspended as its authorizing amount %1 is suspected to be fraudulent.","Authorized amount of %1. Order is suspended as its authorizing amount %1 is suspected to be fraudulent.",module,Magento_Sales
-"Captured amount of %1 online.","Captured amount of %1 online.",module,Magento_Sales
+"Authorized amount of %1. Order is suspended as its authorizing amount %1 is suspected to be fraudulent.","Autorisert beløp av %1. Bestillingen er kansellert da godkjenningsbeløpet på %1 mistenkes å være falskt.",module,Magento_Sales
+"Captured amount of %1 online.","Mottatt beløp på %1 online.",module,Magento_Sales
 "Authorized amount of %1","Authorized amount of %1",module,Magento_Sales
 "Transaction ID: ""%1""","Transaction ID: ""%1""",module,Magento_Sales
 View,View,module,Magento_Sales
@@ -9474,7 +9610,7 @@ Actions,Actions,module,Magento_Sales
 "Print Invoice","Print Invoice",module,Magento_Sales
 "Qty Invoiced","Qty Invoiced",module,Magento_Sales
 Close,Close,module,Magento_Sales
-"About Your Order","About Your Order",module,Magento_Sales
+"About Your Order","Din bestilling",module,Magento_Sales
 "<span class=""label"">Order Date:</span> %1","<span class=""label"">Order Date:</span> %1",module,Magento_Sales
 "Refund #%1","Refund #%1",module,Magento_Sales
 "Shipment #%1","Shipment #%1",module,Magento_Sales
@@ -9485,31 +9621,31 @@ Close,Close,module,Magento_Sales
 "Recently Ordered","Recently Ordered",module,Magento_Sales
 "Add to Cart","Legg i handlekurv",module,Magento_Sales
 Search,Search,module,Magento_Sales
-"Credit memo for your %store_name order","Credit memo for your %store_name order",module,Magento_Sales
+"Credit memo for your %store_name order","Kreditnota for bestillingen %store_name",module,Magento_Sales
 "%name,","%name,",module,Magento_Sales
 "Thank you for your order from %store_name.","Takk for bestillingen din fra %store_name.",module,Magento_Sales
-"You can check the status of your order by <a href=""%account_url"">logging into your account</a>.","You can check the status of your order by <a href=""%account_url"">logging into your account</a>.",module,Magento_Sales
+"You can check the status of your order by <a href=""%account_url"">logging into your account</a>.","Du kan sjekke statusen for bestillingen din ved å <a href=""%account_url""> logge inn på din konto</a>.",module,Magento_Sales
 "If you have questions about your order, you can email us at <a href=""mailto:%store_email"">%store_email</a>","Hvis du har spørsmål om bestillingen, kan du sende oss epost på <a href=""mailto:%store_email""> %store_email</a>",module,Magento_Sales
 "or call us at <a href=""tel:%store_phone"">%store_phone</a>","eller ring oss på <a href=""tel:%store_phone""> %store_phone</a>",module,Magento_Sales
 "Our hours are <span class=""no-link"">%store_hours</span>.","Our hours are <span class=""no-link"">%store_hours</span>.",module,Magento_Sales
-"Your Credit Memo #%creditmemo_id for Order #%order_id","Your Credit Memo #%creditmemo_id for Order #%order_id",module,Magento_Sales
+"Your Credit Memo #%creditmemo_id for Order #%order_id","Din kreditnota #%creditmemo_id for ordre #%order_id",module,Magento_Sales
 "Billing Info","Billing Info",module,Magento_Sales
 "Shipping Info",Fraktinformasjon,module,Magento_Sales
 "Update to your %store_name credit memo","Update to your %store_name credit memo",module,Magento_Sales
-"Your order #%increment_id has been updated with a status of <strong>%order_status</strong>.","Your order #%increment_id has been updated with a status of <strong>%order_status</strong>.",module,Magento_Sales
-"Invoice for your %store_name order","Invoice for your %store_name order",module,Magento_Sales
-"Your Invoice #%invoice_id for Order #%order_id","Your Invoice #%invoice_id for Order #%order_id",module,Magento_Sales
+"Your order #%increment_id has been updated with a status of <strong>%order_status</strong>.","Din ordre #%increment_id har blitt oppdatert med statusen <strong>%order_status</strong>.",module,Magento_Sales
+"Invoice for your %store_name order","Faktura for bestillingen %store_name",module,Magento_Sales
+"Your Invoice #%invoice_id for Order #%order_id","Din faktura #%invoice_id for ordre #%order_id",module,Magento_Sales
 "Update to your %store_name invoice","Update to your %store_name invoice",module,Magento_Sales
-"Your %store_name order confirmation","Your %store_name order confirmation",module,Magento_Sales
+"Your %store_name order confirmation","Ordrebekreftelse for %store_name",module,Magento_Sales
 "%customer_name,","%customer_name,",module,Magento_Sales
 "Once your package ships we will send you a tracking number.","Once your package ships we will send you a tracking number.",module,Magento_Sales
-"Your Order <span class=""no-link"">#%increment_id</span>","Your Order <span class=""no-link"">#%increment_id</span>",module,Magento_Sales
+"Your Order <span class=""no-link"">#%increment_id</span>","Din ordre <span class=""no-link""> #%increment_id</span>",module,Magento_Sales
 "Placed on <span class=""no-link"">%created_at</span>","Placed on <span class=""no-link"">%created_at</span>",module,Magento_Sales
-"Once your package ships we will send an email with a link to track your order.","Once your package ships we will send an email with a link to track your order.",module,Magento_Sales
-"Update to your %store_name order","Update to your %store_name order",module,Magento_Sales
-"Your %store_name order has shipped","Your %store_name order has shipped",module,Magento_Sales
+"Once your package ships we will send an email with a link to track your order.","Når pakken sendes, sender vi en e-post med en link til å spore bestillingen.",module,Magento_Sales
+"Update to your %store_name order","Oppdatering til din %store_name ordre",module,Magento_Sales
+"Your %store_name order has shipped","Din %store_name ordre har blitt sendt",module,Magento_Sales
 "Your shipping confirmation is below. Thank you again for your business.","Your shipping confirmation is below. Thank you again for your business.",module,Magento_Sales
-"Your Shipment #%shipment_id for Order #%order_id","Your Shipment #%shipment_id for Order #%order_id",module,Magento_Sales
+"Your Shipment #%shipment_id for Order #%order_id","Din forsendelse #%shipment_id for ordre #%order_id",module,Magento_Sales
 "Update to your %store_name shipment","Update to your %store_name shipment",module,Magento_Sales
 "Gift Options for","Gavealternativ for",module,Magento_Sales
 "Add Products","Add Products",module,Magento_Sales
@@ -9764,8 +9900,8 @@ Promotions,Kampanjer,module,Magento_SalesRule
 "New Rule","Ny regel",module,Magento_SalesRule
 "New Cart Price Rule","New Cart Price Rule",module,Magento_SalesRule
 "Rule is not defined","Regel er ikke definert",module,Magento_SalesRule
-"Invalid data provided","Invalid data provided",module,Magento_SalesRule
 "%1 coupon(s) have been generated.","%1 coupon(s) have been generated.",module,Magento_SalesRule
+"Invalid data provided","Invalid data provided",module,Magento_SalesRule
 "Something went wrong while generating coupons. Please review the log and try again.","Something went wrong while generating coupons. Please review the log and try again.",module,Magento_SalesRule
 Catalog,Catalog,module,Magento_SalesRule
 "The wrong rule is specified.","The wrong rule is specified.",module,Magento_SalesRule
@@ -9855,11 +9991,11 @@ Description,Beskrivelse,module,Magento_SalesRule
 Websites,Websites,module,Magento_SalesRule
 "Customer Groups","Customer Groups",module,Magento_SalesRule
 Coupon,Coupon,module,Magento_SalesRule
-"Use Auto Generation","Use Auto Generation",module,Magento_SalesRule
 "If you select and save the rule you will be able to generate multiple coupon codes.","If you select and save the rule you will be able to generate multiple coupon codes.",module,Magento_SalesRule
+"Use Auto Generation","Use Auto Generation",module,Magento_SalesRule
 "Uses per Coupon","Uses per Coupon",module,Magento_SalesRule
-"Uses per Customer","Uses per Customer",module,Magento_SalesRule
 "Usage limit enforced for logged in customers only.","Usage limit enforced for logged in customers only.",module,Magento_SalesRule
+"Uses per Customer","Uses per Customer",module,Magento_SalesRule
 From,From,module,Magento_SalesRule
 To,To,module,Magento_SalesRule
 "Public In RSS Feed","Public In RSS Feed",module,Magento_SalesRule
@@ -9872,6 +10008,8 @@ Apply,Apply,module,Magento_SalesRule
 "Apply to Shipping Amount","Apply to Shipping Amount",module,Magento_SalesRule
 "Discard subsequent rules","Discard subsequent rules",module,Magento_SalesRule
 "Default Rule Label for All Store Views","Default Rule Label for All Store Views",module,Magento_SalesRule
+sales_rule,sales_rule,module,Magento_SalesRuleStaging
+"Magento\SalesRule\Api\Data\RuleInterface","Magento\SalesRule\Api\Data\RuleInterface",module,Magento_SalesRuleStaging
 "An error occurred during processing; coupon with id %1 expiration date wasn't updated. The error message was: %2","Det oppstod en feil under behandlingen; kupong med id ""%1""s utløpsdato ikke ble oppdatert. Feilmeldingen var: %2",module,Magento_SalesRuleStaging
 "Future Update in this time range already exists. Select a different range to add a new Future Update.","Fremtidig oppdatering i dette tidsintervallet finnes allerede. Velg et annet område å legge til en ny fremtidig oppdatering.",module,Magento_SalesRuleStaging
 ID,ID,module,Magento_SalesRuleStaging
@@ -9888,7 +10026,6 @@ Edit,Rediger,module,Magento_SalesRuleStaging
 Name,Navn,module,Magento_SalesRuleStaging
 Description,Beskrivelse,module,Magento_SalesRuleStaging
 "Update Information","Update Information",module,Magento_SalesRuleStaging
-"Remove Cart Price Rule from Update","Remove Cart Price Rule from Update",module,Magento_SalesRuleStaging
 "Update Name","Update Name",module,Magento_SalesRuleStaging
 "Start Date",Startdato,module,Magento_SalesRuleStaging
 "End Date",Sluttdato,module,Magento_SalesRuleStaging
@@ -9910,17 +10047,17 @@ Labels,Labels,module,Magento_SalesRuleStaging
 "Move to Another Update","Move to Another Update",module,Magento_SalesRuleStaging
 "Delete the Update","Delete the Update",module,Magento_SalesRuleStaging
 "The cart price rule will be removed from the update and all scheduled changes will be lost.","The cart price rule will be removed from the update and all scheduled changes will be lost.",module,Magento_SalesRuleStaging
-20,20,module,Magento_SalesRuleStaging
-30,30,module,Magento_SalesRuleStaging
-50,50,module,Magento_SalesRuleStaging
-100,100,module,Magento_SalesRuleStaging
 200,200,module,Magento_SalesRuleStaging
+100,100,module,Magento_SalesRuleStaging
+50,50,module,Magento_SalesRuleStaging
+30,30,module,Magento_SalesRuleStaging
+20,20,module,Magento_SalesRuleStaging
 "Start Time",Starttid,module,Magento_SalesRuleStaging
 "End Time",Sluttidspunkt,module,Magento_SalesRuleStaging
 "Cart Price Rules","Cart Price Rules",module,Magento_SalesRuleStaging
-"Remove Cart Price Rule from Campaign","Fjerne handlevognregelen fra kampanje",module,Magento_SalesRuleStaging
 "Entity Sequence profile not added to meta active profile","Enhetsekvens-profilen ikke lagt til meta aktiv profil",module,Magento_SalesSequence
 "Not enough arguments","Ikke nok argumenter",module,Magento_SalesSequence
+"File not found","File not found",module,Magento_SampleData
 "Fatal Error","Uopprettelig feil",module,Magento_ScalableCheckout
 "Advanced Inventory","Avansert lager",module,Magento_ScalableInventory
 "Manage Stock","Administrere lager",module,Magento_ScalableInventory
@@ -9940,6 +10077,7 @@ Backorders,Restordrer,module,Magento_ScalableInventory
 "Enable Qty Increments","Enable Qty Increments",module,Magento_ScalableInventory
 "Qty Increments","Qty Increments",module,Magento_ScalableInventory
 "Stock Availability","Stock Availability",module,Magento_ScalableInventory
+"Use Deferred Stock Update","Use Deferred Stock Update",module,Magento_ScalableInventory
 "Add Scheduled Export","Legg til planlagt eksport",module,Magento_ScheduledImportExport
 "Add Scheduled Import","Legg til planlagt Import",module,Magento_ScheduledImportExport
 "Scheduled Import/Export","Planlagt Import/eksport",module,Magento_ScheduledImportExport
@@ -10141,16 +10279,15 @@ yes,ja,module,Magento_Search
 no,no,module,Magento_Search
 Action,Action,module,Magento_Search
 Edit,Rediger,module,Magento_Search
-Scope,Scope,module,Magento_Search
 "You can adjust the scope of this synonym group by selecting an option from the list.","You can adjust the scope of this synonym group by selecting an option from the list.",module,Magento_Search
-Synonyms,Synonyms,module,Magento_Search
+Scope,Scope,module,Magento_Search
 "Comma-separated list of synonyms. The terms entered (separated by commas) will be used as an “OR” search query to search your entire store. For example, if you enter “shoes,footwear”, and user were to search for ""shoes"", the search results will include any product or content with term “shoes"" or ""footwear.”","Comma-separated list of synonyms. The terms entered (separated by commas) will be used as an “OR” search query to search your entire store. For example, if you enter “shoes,footwear”, and user were to search for ""shoes"", the search results will include any product or content with term “shoes"" or ""footwear.”",module,Magento_Search
-"Merge existing synonyms","Merge existing synonyms",module,Magento_Search
+Synonyms,Synonyms,module,Magento_Search
 "Automatically merges synonyms in groups that share the same scope. If you check this box and you add one or more of the same terms to different synonym groups in the same scope, automatically merges all the terms to one group. If this isn't what you want, uncheck the box and an error displays if you try to add the same terms.","Automatically merges synonyms in groups that share the same scope. If you check this box and you add one or more of the same terms to different synonym groups in the same scope, automatically merges all the terms to one group. If this isn't what you want, uncheck the box and an error displays if you try to add the same terms.",module,Magento_Search
 "Store View","Store View",module,Magento_Search
 Website,Website,module,Magento_Search
-"Delete items","Delete items",module,Magento_Search
 "Are you sure you want to delete the selected synonym groups?","Are you sure you want to delete the selected synonym groups?",module,Magento_Search
+"Delete items","Delete items",module,Magento_Search
 "Advanced Search","Avansert søk",module,Magento_SearchStaging
 "Search Terms",Søkeord,module,Magento_SearchStaging
 "Account Activity",Kontoaktivitet,module,Magento_Security
@@ -10406,40 +10543,53 @@ City,By,module,Magento_Shipping
 "Shipping Policy",Fraktvilkår,module,Magento_Shipping
 "Shipping Methods",Leveringsmåte,module,Magento_Shipping
 "Track your order","Spor din bestilling",module,Magento_Shipping
-Yes,Ja,module,Magento_Signifyd
-No,Nei,module,Magento_Signifyd
-"Submit Guarantee Request","Submit Guarantee Request",module,Magento_Signifyd
-"Cancel Guarantee Request","Avbryt garantiforespørsel",module,Magento_Signifyd
-"Order id is required.","Order id is required.",module,Magento_Signifyd
-"Guarantee has been cancelled for your order.","Guarantee has been cancelled for your order.",module,Magento_Signifyd
-"Sorry, we cannot cancel Guarantee for your order.","Sorry, we cannot cancel Guarantee for your order.",module,Magento_Signifyd
-"Order has been submitted for Guarantee.","Order has been submitted for Guarantee.",module,Magento_Signifyd
-"Sorry, we cannot submit order for Guarantee.","Sorry, we cannot submit order for Guarantee.",module,Magento_Signifyd
+"Track All Shipments","Track All Shipments",module,Magento_Shipping
+OPEN,OPEN,module,Magento_Signifyd
+PROCESSING,PROCESSING,module,Magento_Signifyd
+FLAGGED,FLAGGED,module,Magento_Signifyd
+DISMISSED,DISMISSED,module,Magento_Signifyd
+HELD,HELD,module,Magento_Signifyd
+GOOD,GOOD,module,Magento_Signifyd
+FRAUDULENT,FRAUDULENT,module,Magento_Signifyd
+UNSET,UNSET,module,Magento_Signifyd
+NULL,NULL,module,Magento_Signifyd
+APPROVED,APPROVED,module,Magento_Signifyd
+DECLINED,DECLINED,module,Magento_Signifyd
+PENDING,PENDING,module,Magento_Signifyd
+CANCELED,CANCELED,module,Magento_Signifyd
+IN_REVIEW,IN_REVIEW,module,Magento_Signifyd
+Approved,Approved,module,Magento_Signifyd
+Declined,Declined,module,Magento_Signifyd
+Pending,Pending,module,Magento_Signifyd
+Canceled,Canceled,module,Magento_Signifyd
+"In Review","In Review",module,Magento_Signifyd
+Unrequested,Unrequested,module,Magento_Signifyd
+"Learn more","Learn more",module,Magento_Signifyd
 "This order already has associated case entity","This order already has associated case entity",module,Magento_Signifyd
 "The case entity should not be empty.","The case entity should not be empty.",module,Magento_Signifyd
 "Cannot update Case entity.","Cannot update Case entity.",module,Magento_Signifyd
 "The ""%1"" should not be empty.","The ""%1"" should not be empty.",module,Magento_Signifyd
 "Case entity not found.","Case entity not found.",module,Magento_Signifyd
 "Case Update: New score for the order is %1. Previous score was %2.","Case Update: New score for the order is %1. Previous score was %2.",module,Magento_Signifyd
+"Awaiting the Signifyd guarantee disposition.","Awaiting the Signifyd guarantee disposition.",module,Magento_Signifyd
+"Only single entrance of ""%1"" node is required.","Only single entrance of ""%1"" node is required.",module,Magento_Signifyd
+"Not empty value for ""%1"" node is required.","Not empty value for ""%1"" node is required.",module,Magento_Signifyd
+"%1 must implement %2","%1 must implement %2",module,Magento_Signifyd
 Error,Error,module,Magento_Signifyd
 "Cannot generate message.","Cannot generate message.",module,Magento_Signifyd
 "Message is generated.","Message is generated.",module,Magento_Signifyd
+"Case with the same order id already exists.","Case with the same order id already exists.",module,Magento_Signifyd
 "Fraud Protection Information","Fraud Protection Information",module,Magento_Signifyd
-"Case Status","Case Status",module,Magento_Signifyd
-"Case Score","Case Score",module,Magento_Signifyd
-"Guarantee Eligible","Guarantee Eligible",module,Magento_Signifyd
-"Guarantee Disposition","Guarantee Disposition",module,Magento_Signifyd
-"Associated Team","Associated Team",module,Magento_Signifyd
-"Review Disposition","Review Disposition",module,Magento_Signifyd
-"Case Created","Case Created",module,Magento_Signifyd
-"Case Updated","Case Updated",module,Magento_Signifyd
+"Signifyd Guarantee Decision","Signifyd Guarantee Decision",module,Magento_Signifyd
 "Fraud Protection Section","Fraud Protection Section",module,Magento_Signifyd
 "Fraud Protection","Fraud Protection",module,Magento_Signifyd
-Signifyd,Signifyd,module,Magento_Signifyd
+"Protect your store from fraud with Guaranteed Fraud Protection by Signifyd.","Protect your store from fraud with Guaranteed Fraud Protection by Signifyd.",module,Magento_Signifyd
+Configuration,Configuration,module,Magento_Signifyd
 "Enable this Solution","Enable this Solution",module,Magento_Signifyd
 "API Key","API Key",module,Magento_Signifyd
 "API URL","API URL",module,Magento_Signifyd
 Debug,Debug,module,Magento_Signifyd
+"Webhook URL","Webhook URL",module,Magento_Signifyd
 "Save & Generate","Lagre & Generér",module,Magento_Sitemap
 "Edit Sitemap","Redigere sidekart",module,Magento_Sitemap
 "New Sitemap","Nytt sidekart",module,Magento_Sitemap
@@ -10532,6 +10682,11 @@ Save,Lagre,module,Magento_Staging
 "Date & Time","Dato & tid",module,Magento_Staging
 "This update not exists.","Denne oppdateringen finnes ikke.",module,Magento_Staging
 "Content Staging Dashboard","Content Staging Dashboard",module,Magento_Staging
+"The Start Time of this Update cannot be changed. It's been already started.","The Start Time of this Update cannot be changed. It's been already started.",module,Magento_Staging
+"Future Update in this time range already exists. 
+                            Select a different range to add a new Future Update.","Future Update in this time range already exists. 
+                            Select a different range to add a new Future Update.",module,Magento_Staging
+"Cannot save Update.","Cannot save Update.",module,Magento_Staging
 "Edit Existing Update","Edit Existing Update",module,Magento_Staging
 "Assign to Another Update","Assign to Another Update",module,Magento_Staging
 "Save as a New Update","Lagre som en ny oppdatering",module,Magento_Staging
@@ -10590,14 +10745,20 @@ Includes,Includes,module,Magento_Staging
 "Start Time","Start Time",module,Magento_Staging
 "End Time","End Time",module,Magento_Staging
 Description,Beskrivelse,module,Magento_Staging
-Action,Action,module,Magento_Staging
-"MMM d, y h:mm a","MMM d, y h:mm a",module,Magento_Staging
 "Invalid store parameter.","Ugyldig lagerparameter.",module,Magento_Store
 "Current store is not active.","Gjeldende butikk er ikke aktiv.",module,Magento_Store
 "Requested store is inactive","Den forespurte butikken er inaktiv",module,Magento_Store
 "Requested store is not found","Den forespurte butikken finnes ikke",module,Magento_Store
 "Environment emulation nesting is not allowed.","Environment emulation nesting is not allowed.",module,Magento_Store
+%1,%1,module,Magento_Store
+"Website was not found","Website was not found",module,Magento_Store
+"Group was not found","Group was not found",module,Magento_Store
+"Store was not found","Store was not found",module,Magento_Store
+"Class for type ""%1"" was not declared","Class for type ""%1"" was not declared",module,Magento_Store
+"%1 should implement %2","%1 should implement %2",module,Magento_Store
+"The following stores are not associated with a root category: ' . . '. For the store to be displayed in the storefront, it must be associated with a root category.","The following stores are not associated with a root category: ' . . '. For the store to be displayed in the storefront, it must be associated with a root category.",module,Magento_Store
 "Invalid scope object","Ugyldig område-objekt",module,Magento_Store
+"Group with the same code","Group with the same code",module,Magento_Store
 "Store with the same code","Store with the same code",module,Magento_Store
 "Website with the same code","Website with the same code",module,Magento_Store
 "Website code may only contain letters (a-z), numbers (0-9) or underscore (_), and the first character must be a letter.","Website code may only contain letters (a-z), numbers (0-9) or underscore (_), and the first character must be a letter.",module,Magento_Store
@@ -10851,6 +11012,7 @@ Expand,Expand,module,Magento_Support
 "(no data)","(no data)",module,Magento_Support
 Top,Top,module,Magento_Support
 "No data","No data",module,Magento_Support
+"Support Data Collector","Support Data Collector",module,Magento_Support
 "Support System Report","Support System Report",module,Magento_Support
 "System Report","System Report",module,Magento_Support
 Data,Data,module,Magento_Support
@@ -10861,10 +11023,10 @@ Events,Events,module,Magento_Support
 Cron,Cron,module,Magento_Support
 Design,Design,module,Magento_Support
 Stores,Stores,module,Magento_Support
-"Refresh Status","Refresh Status",module,Magento_Support
 "New Backup","New Backup",module,Magento_Support
-"Delete items","Delete items",module,Magento_Support
+"Refresh Status","Refresh Status",module,Magento_Support
 "Are you sure you want to delete selected item(s)?","Are you sure you want to delete selected item(s)?",module,Magento_Support
+"Delete items","Delete items",module,Magento_Support
 "Code Dump","Code Dump",module,Magento_Support
 "DB Dump","DB Dump",module,Magento_Support
 "Choose Report Groups","Choose Report Groups",module,Magento_Support
@@ -10901,15 +11063,19 @@ Options,Innstillinger,module,Magento_Swatches
 "Create New Value","Create New Value",module,Magento_Swatches
 "These changes affect all related products.","These changes affect all related products.",module,Magento_Swatches
 "Swatches per Product","Swatches per Product",module,Magento_Swatches
+"Show Swatches in Product List","Show Swatches in Product List",module,Magento_Swatches
 "Swatch Image","Swatch Image",module,Magento_Swatches
-Image,Image,module,Magento_Swatches
 "Allowed file types: jpeg, gif, png.","Allowed file types: jpeg, gif, png.",module,Magento_Swatches
+Image,Image,module,Magento_Swatches
 "Image Opacity","Image Opacity",module,Magento_Swatches
-"Image Size","Image Size",module,Magento_Swatches
 "Example format: 200x300.","Example format: 200x300.",module,Magento_Swatches
+"Image Size","Image Size",module,Magento_Swatches
 "Image Position","Image Position",module,Magento_Swatches
 "Default Store View","Default Store View",module,Magento_Swatches
 Admin,Admin,module,Magento_Swatches
+"The value of Admin must be unique.","The value of Admin must be unique.",module,Magento_Swatches
+"The value of Admin must be unique. (%1)","The value of Admin must be unique. (%1)",module,Magento_Swatches
+Description,Description,module,Magento_Swatches
 "Related Products Rule","Regel for relaterte produkter",module,Magento_TargetRule
 "Add Rule","Legg til regel",module,Magento_TargetRule
 "Save and Continue Edit","Lagre og fortsett redigering",module,Magento_TargetRule
@@ -11184,6 +11350,7 @@ Rate,Rate,module,Magento_Tax
 "Order Total Incl. Tax","Ordretotal inkl. mva",module,Magento_Tax
 "Order Total",Ordretotal,module,Magento_Tax
 "Your credit card will be charged for","Your credit card will be charged for",module,Magento_Tax
+"An error occurred while loading tax rates.","An error occurred while loading tax rates.",module,Magento_Tax
 Code,Kode,module,Magento_TaxImportExport
 Country,Land,module,Magento_TaxImportExport
 State,Fylke,module,Magento_TaxImportExport
@@ -11346,7 +11513,6 @@ Password:,Passord:,module,Magento_Theme
 Empty,Empty,module,Magento_Theme
 "1 column","1 column",module,Magento_Theme
 Configuration,Configuration,module,Magento_Theme
-"Default Description","Default Description",module,Magento_Theme
 "Default welcome msg!","Default welcome msg!",module,Magento_Theme
 "Copyright © 2013-2017 Magento, Inc. All rights reserved.","Copyright © 2013-2017 Magento, Inc. All rights reserved.",module,Magento_Theme
 "Design Config Grid","Design Config Grid",module,Magento_Theme
@@ -11356,29 +11522,31 @@ Configuration,Configuration,module,Magento_Theme
 "Theme Information","Theme Information",module,Magento_Theme
 "Other Settings","Other Settings",module,Magento_Theme
 "HTML Head","HTML Head",module,Magento_Theme
+"Allowed file types: ico, png, gif, jpg, jpeg, apng. Not all browsers support all these formats!","Allowed file types: ico, png, gif, jpg, jpeg, apng. Not all browsers support all these formats!",module,Magento_Theme
 "Favicon Icon","Favicon Icon",module,Magento_Theme
-"Allowed file types: ico, png, gif, jpg, jpeg, apng, svg. Not all browsers support all these formats!","Allowed file types: ico, png, gif, jpg, jpeg, apng, svg. Not all browsers support all these formats!",module,Magento_Theme
-"Default Title","Default Title",module,Magento_Theme
-"Title Prefix","Title Prefix",module,Magento_Theme
-"Title Suffix","Title Suffix",module,Magento_Theme
-"Default Keywords","Default Keywords",module,Magento_Theme
-"Scripts and Style Sheets","Scripts and Style Sheets",module,Magento_Theme
+"Default Page Title","Default Page Title",module,Magento_Theme
+"Page Title Prefix","Page Title Prefix",module,Magento_Theme
+"Page Title Suffix","Page Title Suffix",module,Magento_Theme
+"Default Meta Description","Default Meta Description",module,Magento_Theme
+"Default Meta Keywords","Default Meta Keywords",module,Magento_Theme
 "This will be included before head closing tag in page HTML.","This will be included before head closing tag in page HTML.",module,Magento_Theme
+"Scripts and Style Sheets","Scripts and Style Sheets",module,Magento_Theme
 "Display Demo Store Notice","Display Demo Store Notice",module,Magento_Theme
 Header,Header,module,Magento_Theme
+"Allowed file types: png, gif, jpg, jpeg.","Allowed file types: png, gif, jpg, jpeg.",module,Magento_Theme
 "Logo Image",Logobilde,module,Magento_Theme
-"Allowed file types: png, gif, jpg, jpeg, svg.","Allowed file types: png, gif, jpg, jpeg, svg.",module,Magento_Theme
 "Logo Attribute Width","Logo Attribute Width",module,Magento_Theme
 "Logo Attribute Height","Logo Attribute Height",module,Magento_Theme
 "Welcome Text","Welcome Text",module,Magento_Theme
 "Logo Image Alt","Logo Image Alt",module,Magento_Theme
 Footer,Footer,module,Magento_Theme
-"Miscellaneous HTML","Miscellaneous HTML",module,Magento_Theme
 "This will be displayed just before the body closing tag.","This will be displayed just before the body closing tag.",module,Magento_Theme
+"Miscellaneous HTML","Miscellaneous HTML",module,Magento_Theme
 Copyright,Copyright,module,Magento_Theme
 "Default Robots","Default Robots",module,Magento_Theme
 "Edit custom instruction of robots.txt File","Edit custom instruction of robots.txt File",module,Magento_Theme
 "This action will delete your custom instructions and reset robots.txt file to system's default settings.","This action will delete your custom instructions and reset robots.txt file to system's default settings.",module,Magento_Theme
+"Reset To Defaults","Reset To Defaults",module,Magento_Theme
 Website,Website,module,Magento_Theme
 Store,Store,module,Magento_Theme
 "Store View","Store View",module,Magento_Theme
@@ -11402,6 +11570,8 @@ Translations,Oversettelser,module,Magento_Translation
 "Add New %1","Legg til ny %1",module,Magento_Ui
 "New %1","Nye %1",module,Magento_Ui
 "Please select item(s).","Vennligst velg element(er).",module,Magento_Ui
+"Invalid XML in file %1:\n%2","Invalid XML in file %1:\n%2",module,Magento_Ui
+.,.,module,Magento_Ui
 "Unsupported bookmark action.","Unsupported bookmark action.",module,Magento_Ui
 "Parameter ""class"" must be present.","Parameter ""class"" must be present.",module,Magento_Ui
 "Parameter ""sortOrder"" must be present.","Parameter ""sortOrder"" must be present.",module,Magento_Ui
@@ -11516,8 +11686,36 @@ Attention,Attention,module,Magento_Ui
 OK,OK,module,Magento_Ui
 Close,Close,module,Magento_Ui
 Ok,Ok,module,Magento_Ui
+"Label Button 2","Label Button 2",module,Magento_Ui
+"Label Actions One","Label Actions One",module,Magento_Ui
+"Label Actions Two","Label Actions Two",module,Magento_Ui
+"Some Dynamic Actions","Some Dynamic Actions",module,Magento_Ui
 "Log JS Errors to Session Storage","Logg JS-feil til øktlagring",module,Magento_Ui
 "Log JS Errors to Session Storage Key","Log JS Errors to Session Storage Key",module,Magento_Ui
+settings/label,settings/label,module,Magento_Ui
+settings/confirm/title,settings/confirm/title,module,Magento_Ui
+settings/confirm/message,settings/confirm/message,module,Magento_Ui
+settings/callback/provider,settings/callback/provider,module,Magento_Ui
+settings/callback/target,settings/callback/target,module,Magento_Ui
+settings/newViewLabel,settings/newViewLabel,module,Magento_Ui
+settings/title,settings/title,module,Magento_Ui
+settings/description,settings/description,module,Magento_Ui
+settings/addButtonLabel,settings/addButtonLabel,module,Magento_Ui
+formElements/*[name(.)=../../@formElement]/settings/description,formElements/*[name(.)=../../@formElement]/settings/description,module,Magento_Ui
+formElements/*[name(.)=../../@formElement]/settings/caption,formElements/*[name(.)=../../@formElement]/settings/caption,module,Magento_Ui
+formElements/*[name(.)=../../@formElement]/settings/title,formElements/*[name(.)=../../@formElement]/settings/title,module,Magento_Ui
+settings/placeholder,settings/placeholder,module,Magento_Ui
+settings/caption,settings/caption,module,Magento_Ui
+settings/subTitle,settings/subTitle,module,Magento_Ui
+settings/visible,settings/visible,module,Magento_Ui
+settings/showLabel,settings/showLabel,module,Magento_Ui
+settings/breakLine,settings/breakLine,module,Magento_Ui
+settings/required,settings/required,module,Magento_Ui
+settings/size,settings/size,module,Magento_Ui
+settings/notice,settings/notice,module,Magento_Ui
+settings/tooltip/description,settings/tooltip/description,module,Magento_Ui
+settings/addBefore,settings/addBefore,module,Magento_Ui
+settings/addAfter,settings/addAfter,module,Magento_Ui
 Action,Action,module,Magento_Ui
 CSV,CSV,module,Magento_Ui
 "Excel XML","Excel XML",module,Magento_Ui
@@ -11836,7 +12034,7 @@ Failures,Failures,module,Magento_User
 Unlocked,Unlocked,module,Magento_User
 "First-Class Mail Large Envelope","First-Class Mail Stor Konvolutt",module,Magento_Usps
 "First-Class Mail Letter","A-prioritet brevsending",module,Magento_Usps
-"First-Class Mail Parcel","First-Class Mail Parcel",module,Magento_Usps
+"First-Class Package Service - Retail","First-Class Package Service - Retail",module,Magento_Usps
 "First-Class Mail Postcards","First-Class Mail Postkort",module,Magento_Usps
 "Priority Mail","Priority Mail",module,Magento_Usps
 "Priority Mail Express Hold For Pickup","Priority Mail Express Hold For Pickup",module,Magento_Usps
