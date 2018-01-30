@@ -5,6 +5,6 @@
  */
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::LANGUAGE,
-    'day4code_nn_no',
+    'aseventysix_nn_no',
     __DIR__
 );
